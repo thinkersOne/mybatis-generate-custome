@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+    <properties resource="generator/generator.properties"></properties>
+
+    <context id="DB2Tables"  targetRuntime="MyBatis3">
+        <!-- 自动生成toString方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!-- 自动生成equals方法和hashcode方法 -->
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
+
+
+        <!--model类加后缀Entity-->
+        <plugin type="com.chengju.cloud.mybaitis.generator.plugin.RenameModelClassPlugin">
+            <property name="searchString" value="$"></property>
+            <property name="replaceString" value="Entity"></property>
+        </plugin>
+        <!--后缀 Mapper改成Dao-->
+        <plugin type="com.chengju.cloud.mybaitis.generator.plugin.RenameMapperClassPlugin">
+            <property name="searchString" value="Mapper$"></property>
+            <property name="replaceString" value="Dao"></property>
+
+        </plugin>
+        <!--  加@Mapper-->
+        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"/>
+        <!--添加根据条件查询单条的方法-->
+        <plugin type="com.chengju.cloud.mybaitis.generator.plugin.SelectOneByExamplePlugin"></plugin>
+        <!--支持分页-->
+        <plugin type="com.chengju.cloud.mybaitis.generator.plugin.MySQLLimitPlugin" />
+
+        <!-- 覆盖xml文件-->
+        <plugin type="com.chengju.cloud.mybaitis.generator.plugin.OverIsMergeablePlugin" />
+        <!--<plugin type="com.chengju.cloud.mybaitis.generator.plugin.MapperPlugin">-->
+        <!--<property name="targetProject" value="../spring-cloud-chengju-data-demo/src/main/java"/>-->
+        <!--<property name="targetPackage" value="com.chengju.cloud.data.demo.dao"/>-->
+        <!--<property name="daoSuperClass" value="com.chengju.cloud.data.dao.base.BaseMapper"></property>-->
+        <!--</plugin>-->
+        <!--生成数据库表中comments字段-->
+        <commentGenerator type="com.chengju.cloud.mybaitis.generator.internal.CustomeCommentGenerator">
+            <property name="javaFileEncoding" value="UTF-8"/>
+            <property name="suppressDate" value="true" />
+            <property name="suppressAllComments" value="false" />
+        </commentGenerator>
+        <!--<commentGenerator>-->
+        <!--<property name="suppressDate" value="true"/>-->
+        <!--&lt;!&ndash; 是否去除自动生成的注释 true：是 ： false:否 &ndash;&gt;-->
+        <!--<property name="suppressAllComments" value="true"/>-->
+        <!--</commentGenerator>-->
+        <!--jdbc的数据库连接 -->
+        <jdbcConnection driverClass="${g.jdbc.driverClass}" connectionURL="${g.jdbc.connectionURL}" userId="${g.jdbc.userId}" password="${g.jdbc.password}">
+        </jdbcConnection>
+
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置 添加基类-->
+        <javaModelGenerator targetPackage="${g.model.targetPackage}" targetProject="${g.model.targetProject}/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+            <property name="rootClass" value="com.baomidou.mybatisplus.samples.generator.generate.entity.BaseEntity"/>
+        </javaModelGenerator>
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="${g.sqlMap.targetPackage}" targetProject="${g.dao.targetProject}/src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置 添加基类-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${g.dao.targetPackage}" targetProject="${g.dao.targetProject}/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="rootInterface" value="com.baomidou.mybatisplus.samples.generator.generate.dao.BaseDao"/>
+        </javaClientGenerator>
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <table tableName="${g.tableName}"      enableCountByExample="true" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+
+    </context>
+</generatorConfiguration>
