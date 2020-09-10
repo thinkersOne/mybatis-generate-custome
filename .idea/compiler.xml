@@ -15,6 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mybatis-generate" options="-parameters" />
       <module name="mybatis-generate-custome" options="-parameters" />
     </option>
   </component>
