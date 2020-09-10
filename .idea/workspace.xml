@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599702164513</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <created>1599702579735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599702579735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1599700795453">
@@ -114,10 +121,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1599660216612" />
-    <state x="299" y="6" key="CommitChangelistDialog2" timestamp="1599702163215">
+    <state x="299" y="6" key="CommitChangelistDialog2" timestamp="1599702578655">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599702163215" />
+    <state x="299" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599702578655" />
     <state width="478" height="466" key="DebuggerActiveHint" timestamp="1599701445809">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -166,14 +173,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599702174584">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599702587153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599702174584" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1599702169366">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599702587153" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1599702583278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1599702169366" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1599702583278" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599702634777">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599702634777" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
