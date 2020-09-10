@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.entity.dao.RmsDriverDao">
+  <resultMap id="BaseResultMap" type="com.baomidou.entity.model.RmsDriverEntity">
+    <!--
+      @mbggenerated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sys_org_id" jdbcType="BIGINT" property="sysOrgId" />
+    <result column="rms_motorcade_id" jdbcType="BIGINT" property="rmsMotorcadeId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="iphone" jdbcType="VARCHAR" property="iphone" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="base_wages" jdbcType="DECIMAL" property="baseWages" />
+    <result column="birthday" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="identity_card" jdbcType="VARCHAR" property="identityCard" />
+    <result column="license_date" jdbcType="TIMESTAMP" property="licenseDate" />
+    <result column="bank_account" jdbcType="VARCHAR" property="bankAccount" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="iphone2" jdbcType="VARCHAR" property="iphone2" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="driver_type" jdbcType="INTEGER" property="driverType" />
+    <result column="task_distance" jdbcType="DECIMAL" property="taskDistance" />
+    <result column="task_count" jdbcType="INTEGER" property="taskCount" />
+    <result column="task_done_count" jdbcType="INTEGER" property="taskDoneCount" />
+    <result column="source_type" jdbcType="INTEGER" property="sourceType" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="tenant_id" jdbcType="BIGINT" property="tenantId" />
+    <result column="pin_yin" jdbcType="VARCHAR" property="pinYin" />
+    <result column="sys_app_id" jdbcType="BIGINT" property="sysAppId" />
+    <result column="last_complete_time" jdbcType="TIMESTAMP" property="lastCompleteTime" />
+    <result column="task_status" jdbcType="INTEGER" property="taskStatus" />
+    <result column="last_transport_point_name" jdbcType="VARCHAR" property="lastTransportPointName" />
+    <result column="license_card" jdbcType="VARCHAR" property="licenseCard" />
+    <result column="license_model" jdbcType="VARCHAR" property="licenseModel" />
+    <result column="license_valid_period" jdbcType="DATE" property="licenseValidPeriod" />
+    <result column="identity_valid_period" jdbcType="DATE" property="identityValidPeriod" />
+    <result column="audit_status" jdbcType="INTEGER" property="auditStatus" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <!--
+      @mbggenerated
+    -->
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--
+      @mbggenerated
+    -->
+    id, sys_org_id, rms_motorcade_id, name, code, iphone, age, base_wages, birthday, 
+    identity_card, license_date, bank_account, bank_name, iphone2, sex, driver_type, 
+    task_distance, task_count, task_done_count, source_type, status, remark, create_user, 
+    update_user, create_time, update_time, tenant_id, pin_yin, sys_app_id, last_complete_time, 
+    task_status, last_transport_point_name, license_card, license_model, license_valid_period, 
+    identity_valid_period, audit_status
+  </sql>
+  <select id="selectByExample" parameterType="com.baomidou.entity.model.RmsDriverExample" resultMap="BaseResultMap">
+    <!--
+      @mbggenerated
+    -->
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from rms_driver
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      @mbggenerated
+    -->
+    select 
+    <include refid="Base_Column_List" />
+    from rms_driver
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--
+      @mbggenerated
+    -->
+    delete from rms_driver
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.baomidou.entity.model.RmsDriverEntity">
+    <!--
+      @mbggenerated
+    -->
+    insert into rms_driver (id, sys_org_id, rms_motorcade_id, 
+      name, code, iphone, 
+      age, base_wages, birthday, 
+      identity_card, license_date, bank_account, 
+      bank_name, iphone2, sex, 
+      driver_type, task_distance, task_count, 
+      task_done_count, source_type, status, 
+      remark, create_user, update_user, 
+      create_time, update_time, tenant_id, 
+      pin_yin, sys_app_id, last_complete_time, 
+      task_status, last_transport_point_name, license_card, 
+      license_model, license_valid_period, identity_valid_period, 
+      audit_status)
+    values (#{id,jdbcType=BIGINT}, #{sysOrgId,jdbcType=BIGINT}, #{rmsMotorcadeId,jdbcType=BIGINT}, 
+      #{name,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR}, #{iphone,jdbcType=VARCHAR}, 
+      #{age,jdbcType=INTEGER}, #{baseWages,jdbcType=DECIMAL}, #{birthday,jdbcType=TIMESTAMP}, 
+      #{identityCard,jdbcType=VARCHAR}, #{licenseDate,jdbcType=TIMESTAMP}, #{bankAccount,jdbcType=VARCHAR}, 
+      #{bankName,jdbcType=VARCHAR}, #{iphone2,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, 
+      #{driverType,jdbcType=INTEGER}, #{taskDistance,jdbcType=DECIMAL}, #{taskCount,jdbcType=INTEGER}, 
+      #{taskDoneCount,jdbcType=INTEGER}, #{sourceType,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{remark,jdbcType=VARCHAR}, #{createUser,jdbcType=VARCHAR}, #{updateUser,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{tenantId,jdbcType=BIGINT}, 
+      #{pinYin,jdbcType=VARCHAR}, #{sysAppId,jdbcType=BIGINT}, #{lastCompleteTime,jdbcType=TIMESTAMP}, 
+      #{taskStatus,jdbcType=INTEGER}, #{lastTransportPointName,jdbcType=VARCHAR}, #{licenseCard,jdbcType=VARCHAR}, 
+      #{licenseModel,jdbcType=VARCHAR}, #{licenseValidPeriod,jdbcType=DATE}, #{identityValidPeriod,jdbcType=DATE}, 
+      #{auditStatus,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.baomidou.entity.model.RmsDriverEntity">
+    <!--
+      @mbggenerated
+    -->
+    insert into rms_driver
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="sysOrgId != null">
+        sys_org_id,
+      </if>
+      <if test="rmsMotorcadeId != null">
+        rms_motorcade_id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="code != null">
+        code,
+      </if>
+      <if test="iphone != null">
+        iphone,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="baseWages != null">
+        base_wages,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="identityCard != null">
+        identity_card,
+      </if>
+      <if test="licenseDate != null">
+        license_date,
+      </if>
+      <if test="bankAccount != null">
+        bank_account,
+      </if>
+      <if test="bankName != null">
+        bank_name,
+      </if>
+      <if test="iphone2 != null">
+        iphone2,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="driverType != null">
+        driver_type,
+      </if>
+      <if test="taskDistance != null">
+        task_distance,
+      </if>
+      <if test="taskCount != null">
+        task_count,
+      </if>
+      <if test="taskDoneCount != null">
+        task_done_count,
+      </if>
+      <if test="sourceType != null">
+        source_type,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="tenantId != null">
+        tenant_id,
+      </if>
+      <if test="pinYin != null">
+        pin_yin,
+      </if>
+      <if test="sysAppId != null">
+        sys_app_id,
+      </if>
+      <if test="lastCompleteTime != null">
+        last_complete_time,
+      </if>
+      <if test="taskStatus != null">
+        task_status,
+      </if>
+      <if test="lastTransportPointName != null">
+        last_transport_point_name,
+      </if>
+      <if test="licenseCard != null">
+        license_card,
+      </if>
+      <if test="licenseModel != null">
+        license_model,
+      </if>
+      <if test="licenseValidPeriod != null">
+        license_valid_period,
+      </if>
+      <if test="identityValidPeriod != null">
+        identity_valid_period,
+      </if>
+      <if test="auditStatus != null">
+        audit_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="sysOrgId != null">
+        #{sysOrgId,jdbcType=BIGINT},
+      </if>
+      <if test="rmsMotorcadeId != null">
+        #{rmsMotorcadeId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="code != null">
+        #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="iphone != null">
+        #{iphone,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="baseWages != null">
+        #{baseWages,jdbcType=DECIMAL},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="identityCard != null">
+        #{identityCard,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseDate != null">
+        #{licenseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bankAccount != null">
+        #{bankAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="bankName != null">
+        #{bankName,jdbcType=VARCHAR},
+      </if>
+      <if test="iphone2 != null">
+        #{iphone2,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="driverType != null">
+        #{driverType,jdbcType=INTEGER},
+      </if>
+      <if test="taskDistance != null">
+        #{taskDistance,jdbcType=DECIMAL},
+      </if>
+      <if test="taskCount != null">
+        #{taskCount,jdbcType=INTEGER},
+      </if>
+      <if test="taskDoneCount != null">
+        #{taskDoneCount,jdbcType=INTEGER},
+      </if>
+      <if test="sourceType != null">
+        #{sourceType,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tenantId != null">
+        #{tenantId,jdbcType=BIGINT},
+      </if>
+      <if test="pinYin != null">
+        #{pinYin,jdbcType=VARCHAR},
+      </if>
+      <if test="sysAppId != null">
+        #{sysAppId,jdbcType=BIGINT},
+      </if>
+      <if test="lastCompleteTime != null">
+        #{lastCompleteTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="taskStatus != null">
+        #{taskStatus,jdbcType=INTEGER},
+      </if>
+      <if test="lastTransportPointName != null">
+        #{lastTransportPointName,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseCard != null">
+        #{licenseCard,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseModel != null">
+        #{licenseModel,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseValidPeriod != null">
+        #{licenseValidPeriod,jdbcType=DATE},
+      </if>
+      <if test="identityValidPeriod != null">
+        #{identityValidPeriod,jdbcType=DATE},
+      </if>
+      <if test="auditStatus != null">
+        #{auditStatus,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.baomidou.entity.model.RmsDriverExample" resultType="java.lang.Long">
+    <!--
+      @mbggenerated
+    -->
+    select count(*) from rms_driver
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByPrimaryKeySelective" parameterType="com.baomidou.entity.model.RmsDriverEntity">
+    <!--
+      @mbggenerated
+    -->
+    update rms_driver
+    <set>
+      <if test="sysOrgId != null">
+        sys_org_id = #{sysOrgId,jdbcType=BIGINT},
+      </if>
+      <if test="rmsMotorcadeId != null">
+        rms_motorcade_id = #{rmsMotorcadeId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="code != null">
+        code = #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="iphone != null">
+        iphone = #{iphone,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="baseWages != null">
+        base_wages = #{baseWages,jdbcType=DECIMAL},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="identityCard != null">
+        identity_card = #{identityCard,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseDate != null">
+        license_date = #{licenseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bankAccount != null">
+        bank_account = #{bankAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="bankName != null">
+        bank_name = #{bankName,jdbcType=VARCHAR},
+      </if>
+      <if test="iphone2 != null">
+        iphone2 = #{iphone2,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="driverType != null">
+        driver_type = #{driverType,jdbcType=INTEGER},
+      </if>
+      <if test="taskDistance != null">
+        task_distance = #{taskDistance,jdbcType=DECIMAL},
+      </if>
+      <if test="taskCount != null">
+        task_count = #{taskCount,jdbcType=INTEGER},
+      </if>
+      <if test="taskDoneCount != null">
+        task_done_count = #{taskDoneCount,jdbcType=INTEGER},
+      </if>
+      <if test="sourceType != null">
+        source_type = #{sourceType,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tenantId != null">
+        tenant_id = #{tenantId,jdbcType=BIGINT},
+      </if>
+      <if test="pinYin != null">
+        pin_yin = #{pinYin,jdbcType=VARCHAR},
+      </if>
+      <if test="sysAppId != null">
+        sys_app_id = #{sysAppId,jdbcType=BIGINT},
+      </if>
+      <if test="lastCompleteTime != null">
+        last_complete_time = #{lastCompleteTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="taskStatus != null">
+        task_status = #{taskStatus,jdbcType=INTEGER},
+      </if>
+      <if test="lastTransportPointName != null">
+        last_transport_point_name = #{lastTransportPointName,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseCard != null">
+        license_card = #{licenseCard,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseModel != null">
+        license_model = #{licenseModel,jdbcType=VARCHAR},
+      </if>
+      <if test="licenseValidPeriod != null">
+        license_valid_period = #{licenseValidPeriod,jdbcType=DATE},
+      </if>
+      <if test="identityValidPeriod != null">
+        identity_valid_period = #{identityValidPeriod,jdbcType=DATE},
+      </if>
+      <if test="auditStatus != null">
+        audit_status = #{auditStatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.baomidou.entity.model.RmsDriverEntity">
+    <!--
+      @mbggenerated
+    -->
+    update rms_driver
+    set sys_org_id = #{sysOrgId,jdbcType=BIGINT},
+      rms_motorcade_id = #{rmsMotorcadeId,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR},
+      iphone = #{iphone,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      base_wages = #{baseWages,jdbcType=DECIMAL},
+      birthday = #{birthday,jdbcType=TIMESTAMP},
+      identity_card = #{identityCard,jdbcType=VARCHAR},
+      license_date = #{licenseDate,jdbcType=TIMESTAMP},
+      bank_account = #{bankAccount,jdbcType=VARCHAR},
+      bank_name = #{bankName,jdbcType=VARCHAR},
+      iphone2 = #{iphone2,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      driver_type = #{driverType,jdbcType=INTEGER},
+      task_distance = #{taskDistance,jdbcType=DECIMAL},
+      task_count = #{taskCount,jdbcType=INTEGER},
+      task_done_count = #{taskDoneCount,jdbcType=INTEGER},
+      source_type = #{sourceType,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_user = #{createUser,jdbcType=VARCHAR},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      tenant_id = #{tenantId,jdbcType=BIGINT},
+      pin_yin = #{pinYin,jdbcType=VARCHAR},
+      sys_app_id = #{sysAppId,jdbcType=BIGINT},
+      last_complete_time = #{lastCompleteTime,jdbcType=TIMESTAMP},
+      task_status = #{taskStatus,jdbcType=INTEGER},
+      last_transport_point_name = #{lastTransportPointName,jdbcType=VARCHAR},
+      license_card = #{licenseCard,jdbcType=VARCHAR},
+      license_model = #{licenseModel,jdbcType=VARCHAR},
+      license_valid_period = #{licenseValidPeriod,jdbcType=DATE},
+      identity_valid_period = #{identityValidPeriod,jdbcType=DATE},
+      audit_status = #{auditStatus,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectOneByExample" parameterType="com.baomidou.entity.model.RmsDriverExample" resultMap="BaseResultMap">
+    <!--
+      WARNING - @mbggenerated
+      这个节点为代码生成工具生成，请不要修改!
+      @author 笑傲江湖
+      @qq 631783964
+    -->
+    select
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from rms_driver
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    limit 1
+  </select>
+</mapper>

@@ -1,0 +1,62 @@
+swagger: 2.0
+info:
+  title: Xforce+ athena API
+  description: Xforce+ athena API 3.0
+  version: 1.0
+host: 118.178.134.104:8081
+basePath: "/api-v1"
+schemes:
+- http
+- https
+#basePath: /v1
+tags:
+- name: Mobile Purchaser
+  description: 企业版
+produces:
+- application/json
+consumes:
+- application/json
+securityDefinitions:
+  X-Access-Token:
+    type: apiKey
+    name: X-Access-Token
+    in: header
+  X-Operation-Token:
+    type: apiKey
+    name: X-Operation-Token
+    in: header
+security:
+- X-Access-Token: []
+- X-Operation-Token: []
+paths:
+  #################司机管理###########################
+  # 获取当前页
+  rmsDriver/getPage:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/getPage'
+  # 获取总数
+  rmsDriver/getTotal:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/getTotal'
+  # 保存
+  rmsDriver/save:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/save'
+  # 名称是否存在
+  rmsDriver/existsName:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/existsName'
+  # 编码是否存在
+  rmsDriver/existsCode:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/existsCode'
+  # 获取保存模型
+  rmsDriver/getModel:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/getModel'
+  # 导入
+  rmsDriver/importExcel:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/importExcel'
+    # 导出
+  rmsDriver/exportExcel:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/exportExcel'
+  rmsDriver/downloadTemplate:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/downloadTemplate'
+  #更新状态
+  rmsDriver/updateStatus:
+    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/updateStatus'
+

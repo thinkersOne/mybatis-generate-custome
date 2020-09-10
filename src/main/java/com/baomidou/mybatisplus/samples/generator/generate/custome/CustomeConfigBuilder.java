@@ -668,6 +668,7 @@ public class CustomeConfigBuilder{
 
     private void handlerPackage(CustomeTemplateConfig template, String outputDir, CustomePackageConfig config) {
         this.packageInfo = CollectionUtils.newHashMapWithExpectedSize(7);
+        this.packageInfo.put("Parent",config.getParent());
         this.packageInfo.put("ModuleName", config.getModuleName());
         this.packageInfo.put("Entity", this.joinPackage(config.getParent(), config.getEntity()));
         //更改成 MapperExt

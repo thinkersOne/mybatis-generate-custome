@@ -46,7 +46,7 @@ public class MysqlGenerator {
         mpg.setGlobalConfig(gc);
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/springboot?useUnicode=true&serverTimezone=GMT&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://localhost:3306/cj_tms_local?useUnicode=true&serverTimezone=GMT&useSSL=false&characterEncoding=utf8");
         // dsc.setSchemaName("public");
 //        dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
@@ -98,7 +98,7 @@ public class MysqlGenerator {
         strategy.setSuperEntityColumns("id");
         strategy.setRestControllerStyle(true);
         strategy.setControllerMappingHyphenStyle(true);
-        strategy.setTablePrefix(pc.getModuleName() + "_");
+//        strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
         // 选择 freemarker 引擎需要指定如下加，注意 pom 依赖必须有！
         mpg.setCustomeTemplateEngine(new CustomeFreemarkerTemplateEngine());
@@ -113,10 +113,10 @@ public class MysqlGenerator {
         String projectPath = System.getProperty("user.dir");
         generateModel.setOutputDir(projectPath + "/src/main/java");
         generateModel.setAuthor("lizhihao");
-        generateModel.setModuleName("user");
+        generateModel.setModuleName("rms");
         generateModel.setParentPackage("com.baomidou.mybatisplus.samples.generator");
         generateModel.setMapperPath(projectPath + "/src/main/resources/mapper/");
-        generateModel.setTableNames("user_log");
+        generateModel.setTableNames("rms_driver");
         //生成 mapperExt 地址
         generateModel.setMapperExtPath("mapperExt");
         // entity 所在包的名称

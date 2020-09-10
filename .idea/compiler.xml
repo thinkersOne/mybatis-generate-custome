@@ -6,16 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatis-generate-custome" />
+        <module name="swagger-generate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mybatis-generate-custome" target="1.8" />
+      <module name="swagger-generate" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mybatis-generate-custome" options="-parameters" />
+      <module name="swagger-generate" options="-parameters" />
     </option>
   </component>
 </project>

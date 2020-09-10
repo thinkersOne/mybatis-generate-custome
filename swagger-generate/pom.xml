@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mybatis-generate-custome</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.3.0.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>swagger-generate</artifactId>
+
+    <name>swagger-generate</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <!-- Bean Validation API support -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+            <plugins>
+                <!-- swagger 接口生成插件 -->
+                <plugin>
+                    <groupId>org.codehaus.gmaven</groupId>
+                    <artifactId>groovy-maven-plugin</artifactId>
+                    <version>2.0</version>
+                    <configuration>
+                        <properties>
+                            <inFile>${project.basedir}/src/main/swagger-spec/all/index.yaml</inFile>
+                            <outFile>${project.basedir}/src/main/swagger-spec/api</outFile>
+                        </properties>
+                        <source>
+                            import io.swagger.parser.Swagger20Parser
+                            import io.swagger.parser.SwaggerResolver
+                            import io.swagger.util.Json
+                            import io.swagger.util.Yaml
+                            import org.apache.commons.io.FileUtils
+
+                            def parser = new Swagger20Parser()
+                            def path = properties['inFile']
+                            def swagger = parser.read(path, null)
+                            def resolver = new SwaggerResolver(swagger, null, path)
+                            resolver.resolve()
+                            def out = properties['outFile']
+                            Json.pretty().writeValue(new File(out + '.json'), swagger)
+                            Yaml.pretty().writeValue(new File(out + '.yaml'), swagger)
+                        </source>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>io.swagger</groupId>
+                            <artifactId>swagger-parser</artifactId>
+                            <version>1.0.25</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>io.swagger.codegen.v3</groupId>
+                    <artifactId>swagger-codegen-maven-plugin</artifactId>
+                    <version>3.0.11</version>
+                    <configuration>
+                        <!-- specify the swagger yaml -->
+                        <inputSpec>${project.basedir}/src/main/swagger-spec/api.yaml</inputSpec>
+                        <output>${project.basedir}/swagger-codegen</output>
+                        <generateApiTests>false</generateApiTests>
+                        <generateModelTests>false</generateModelTests>
+                        <language>spring</language>
+                        <modelPackage>com.baomidou.controller.model</modelPackage>
+                        <configOptions>
+                            <sourceFolder>src/main/java</sourceFolder>
+                            <apiPackage>com.baomidou.controller.api</apiPackage>
+                            <basePackage>com.baomidou.controller</basePackage>
+                            <interfaceOnly>true</interfaceOnly>
+                            <java8>true</java8>
+                            <jdk8>true</jdk8>
+                            <dateLibrary>java8</dateLibrary>
+                            <additional-properties>
+                                jackson=true
+                            </additional-properties>
+                            <hideGenerationTimestamp>true</hideGenerationTimestamp>
+                            <!--数据类型映射-->
+                            <type-mappings>LocalDate=java.util.Date,Double=java.math.BigDecimal</type-mappings>
+                            <import-mappings>Response=com.chengju.cloud.framework.model.Response,PageParam=com.chengju.common.dao.PageParam</import-mappings>
+                            <!--<import-mappings>PageParam=PageParam</import-mappings>-->
+                        </configOptions>
+                        <verbose>true</verbose>
+                    </configuration>
+                </plugin>
+            </plugins>
+    </build>
+</project>

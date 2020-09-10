@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mybatis-generate-custome.iml" filepath="$PROJECT_DIR$/.idea/mybatis-generate-custome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swagger-generate/swagger-generate.iml" filepath="$PROJECT_DIR$/swagger-generate/swagger-generate.iml" />
     </modules>
   </component>
 </project>

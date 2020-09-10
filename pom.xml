@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mybatis-generate-custome</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>swagger-generate</module>
+    </modules>
 
     <dependencies>
         <!-- pinyin -->
@@ -43,6 +47,8 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>5.1.46</version>
         </dependency>
         <dependency>
             <groupId>p6spy</groupId>
@@ -53,6 +59,16 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.6.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
         </dependency>
     </dependencies>
 
@@ -103,14 +119,12 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>swagger-codegen/src/main/java</source>
+                                <source>src/main/java</source>
                             </sources>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
-
-
     </build>
 </project>
