@@ -1,6 +1,6 @@
 package ${package.Service};
 
-import ${package.Entity}.${entity};
+import ${package.Entity}.${entity}Entity;
 import ${superServiceClassPackage};
 import org.springframework.stereotype.Service;
 
@@ -18,17 +18,17 @@ class ${table.serviceName}
 @Service
 public class ${table.serviceName}{
    //列表查询
-   public ${table.serviceName}GetPageResponse getPage(${table.serviceName}GetPageRequest request) {
-       ${table.serviceName}GetPageResponse response = new ${table.serviceName}GetPageResponse();
-        List<${table.serviceName}Entity> list = daoExt.getPage(SqlPageParam.create(request.getPageParam()), request.getQueryParam());
-       List<${table.serviceName}GetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
+   public ${table.entityName}GetPageResponse getPage(${table.entityName}GetPageRequest request) {
+       ${table.entityName}GetPageResponse response = new ${table.entityName}GetPageResponse();
+        List<${table.entityName}Entity> list = daoExt.getPage(SqlPageParam.create(request.getPageParam()), request.getQueryParam());
+       List<${table.entityName}GetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
        response.setData(data);
        response.setCode(Response.OK);
        return response;
    }
    //获取总数
-   public ${table.serviceName}GetTotalResponse getTotal(@RequestBody ${table.serviceName}GetTotalRequest request) {
-       ${table.serviceName}GetTotalResponse response = new ${table.serviceName}GetTotalResponse();
+   public ${table.entityName}GetTotalResponse getTotal(@RequestBody ${table.entityName}GetTotalRequest request) {
+       ${table.entityName}GetTotalResponse response = new ${table.entityName}GetTotalResponse();
        long total = daoExt.getCount(request.getQueryParam());
        response.setTotal(total);
        response.setCode(Response.OK);
@@ -41,18 +41,18 @@ public class ${table.serviceName}{
         * @param request
         * @return
         */
-       public ${table.serviceName}SaveResponse save(${table.serviceName}SaveRequest request, AdminSessionInfo sessionInfo) {
-           ${table.serviceName}SaveResponse response = this.check(request);
+       public ${table.entityName}SaveResponse save(${table.entityName}SaveRequest request, AdminSessionInfo sessionInfo) {
+           ${table.entityName}SaveResponse response = this.check(request);
            if (response.getCode() < 1) {
                return response;
            }
            OpLogWriter opLogWriter = this.logService.newOpLogWriter(sessionInfo.getSysUserName());
-           ${table.serviceName}Entity entity = null;
+           ${table.entityName}Entity entity = null;
            if (request.getModel().getId() != null && request.getModel().getId() > 0) {
            entity = dao.selectByPrimaryKey(request.getModel().getId());
            opLogWriter.setOldEntity(entity);
            }
-           entity = load${table.serviceName}Entity(request.getModel(),entity, sessionInfo);
+           entity = load${table.entityName}Entity(request.getModel(),entity, sessionInfo);
            Map<String, Object> mapNew = ToMapUtil.toMap(entity);
            if (entity.getId() == null) {
            //新增
@@ -74,10 +74,10 @@ public class ${table.serviceName}{
     /**
     * 保存
     */
-    public ${table.serviceName}Entity load${table.serviceName}Entity(${table.serviceName}SaveModel saveModel,
-    ${table.serviceName}Entity entity,AdminSessionInfo sessionInfo){
+    public ${table.entityName}Entity load${table.entityName}Entity(${table.entityName}SaveModel saveModel,
+    ${table.entityName}Entity entity,AdminSessionInfo sessionInfo){
             if (entity == null) {
-                entity = new ${table.serviceName}Entity();
+                entity = new ${table.entityName}Entity();
                 entity.setTenantId(sessionInfo.getCurrentTenantId());
                 entity.setCreateUser(sessionInfo.getSysUserName());
                 entity.setCreateTime(new Date());
@@ -97,40 +97,40 @@ public class ${table.serviceName}{
             return  entity;
     }
     // check
-    public ${table.serviceName}SaveResponse check(${table.serviceName}SaveRequest request) {
-        ${table.serviceName}SaveResponse response = new ${table.serviceName}SaveResponse();
-        Enum${table.serviceName}ErrorCode error = Enum${table.serviceName}ErrorCode.OK;
+    public ${table.entityName}SaveResponse check(${table.entityName}SaveRequest request) {
+        ${table.entityName}SaveResponse response = new ${table.entityName}SaveResponse();
+        Enum${table.entityName}ErrorCode error = Enum${table.entityName}ErrorCode.OK;
         if (request == null || request.getModel() == null) {
-            error = Enum${table.serviceName}ErrorCode.NOT_NULL;
+            error = Enum${table.entityName}ErrorCode.NOT_NULL;
         }
-        ${table.serviceName}SaveModel model = request.getModel();
+        ${table.entityName}SaveModel model = request.getModel();
         response.setCode(error.getCode());
         response.setMessage(error.getMessage());
         return response;
     }
     // 获取详情
-    public ${table.serviceName}GetModelResponse getModel(${table.serviceName}GetModelRequest request) {
-            ${table.serviceName}GetModelResponse response = new ${table.serviceName}GetModelResponse();
-            ${table.serviceName}Entity entity = dao.selectByPrimaryKey(request.getId());
-            ${table.serviceName}SaveModel saveModel = new ${table.serviceName}SaveModel();
+    public ${table.entityName}GetModelResponse getModel(${table.entityName}GetModelRequest request) {
+            ${table.entityName}GetModelResponse response = new ${table.entityName}GetModelResponse();
+            ${table.entityName}Entity entity = dao.selectByPrimaryKey(request.getId());
+            ${table.entityName}SaveModel saveModel = new ${table.entityName}SaveModel();
             saveModel.setBalanceAmount(entity.getBalanceAmount());
             saveModel.setCardNo(entity.getCardNo());
             saveModel.setCarrierType(entity.getCarrierType());
             saveModel.setDriverId(entity.getDriverId());
             saveModel.setId(entity.getId());
             saveModel.setOilCardType(entity.getOilCardType());
-            saveModel.setOilCardTypeName(Enum${table.serviceName}Type.getText(entity.getOilCardType()));
+            saveModel.setOilCardTypeName(Enum${table.entityName}Type.getText(entity.getOilCardType()));
             saveModel.setOperationMode(entity.getOperationMode());
-            saveModel.setOperationModeName(Enum${table.serviceName}OperationMode.getText(entity.getOperationMode()));
+            saveModel.setOperationModeName(Enum${table.entityName}OperationMode.getText(entity.getOperationMode()));
             saveModel.setRemark(entity.getRemark());
             saveModel.setRmsMotorcadeId(entity.getRmsMotorcadeId());
             saveModel.setSellerCompanyId(entity.getSellerCompanyId());
             saveModel.setStatus(entity.getStatus());
-            saveModel.setStatusName(Enum${table.serviceName}Status.getText(entity.getStatus()));
+            saveModel.setStatusName(Enum${table.entityName}Status.getText(entity.getStatus()));
             saveModel.setLossStatus(entity.getLossStatus());
-            saveModel.setLossStatusName(Enum${table.serviceName}LossStatus.getText(entity.getLossStatus()));
+            saveModel.setLossStatusName(Enum${table.entityName}LossStatus.getText(entity.getLossStatus()));
             saveModel.setAllocationStatus(entity.getAllocationStatus());
-            saveModel.setAllocationStatusName(Enum${table.serviceName}AllocationStatus.getText(entity.getAllocationStatus()));
+            saveModel.setAllocationStatusName(Enum${table.entityName}AllocationStatus.getText(entity.getAllocationStatus()));
             saveModel.setVehicleLicense(entity.getVehicleLicense());
             saveModel.setRmsVehicleId(entity.getRmsVehicleId());
             saveModel.setSupplierId(entity.getSupplierId());
@@ -172,15 +172,15 @@ public class ${table.serviceName}{
             return info;
     }
     // 导出
-    public ExcelFileInfo<${table.serviceName}GetPageModel> getExportMeta(String fileName, List<${table.serviceName}GetPageModel> dataSource) {
-        ExcelFileInfo<${table.serviceName}GetPageModel> info = getImportMeta();
+    public ExcelFileInfo<${table.entityName}GetPageModel> getExportMeta(String fileName, List<${table.entityName}GetPageModel> dataSource) {
+        ExcelFileInfo<${table.entityName}GetPageModel> info = getImportMeta();
         info.setDataSource(dataSource);
         info.setFileName(fileName);
         return info;
     }
     // 列表转化
-    private ${table.serviceName}GetPageModel toPageModel(${table.serviceName}Entity entity) {
-            ${table.serviceName}etPageModel model = new ${table.serviceName}GetPageModel();
+    private ${table.entityName}GetPageModel toPageModel(${table.entityName}Entity entity) {
+            ${table.entityName}etPageModel model = new ${table.entityName}GetPageModel();
 
             model.setBalanceAmount(entity.getBalanceAmount());
 
@@ -235,18 +235,18 @@ public class ${table.serviceName}{
             return model;
      }
     // 获取导出数据
-    public List<${table.serviceName}GetPageModel> getExportDataSource(${table.serviceName}GetPageParam pageParam) {
-        List<${table.serviceName}Entity> list = daoExt.getByWhere(pageParam);
-        List<${table.serviceName}GetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
+    public List<${table.entityName}GetPageModel> getExportDataSource(${table.entityName}GetPageParam pageParam) {
+        List<${table.entityName}Entity> list = daoExt.getByWhere(pageParam);
+        List<${table.entityName}GetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
         setOtherInfo(data);
         return data;
     }
 
     // 更新状态
-    public ${table.serviceName}UpdateStatusResponse updateStatus(${table.serviceName}UpdateStatusRequest request) {
-        ${table.serviceName}UpdateStatusResponse response = new ${table.serviceName}UpdateStatusResponse();
+    public ${table.entityName}UpdateStatusResponse updateStatus(${table.entityName}UpdateStatusRequest request) {
+        ${table.entityName}UpdateStatusResponse response = new ${table.entityName}UpdateStatusResponse();
         response.setCode(Response.OK);
-        ${table.serviceName}Entity entity = new ${table.serviceName}Entity();
+        ${table.entityName}Entity entity = new ${table.entityName}Entity();
         entity.setStatus(request.getStatus());
         entity.setId(request.getId());
         dao.updateByPrimaryKeySelective(entity);

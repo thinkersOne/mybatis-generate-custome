@@ -9,6 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>mybatis-generate-custome</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
     <groupId>org.mybatis.generate</groupId>
     <version>1.0.0.SNAPSHOT</version>
     <packaging>pom</packaging>
