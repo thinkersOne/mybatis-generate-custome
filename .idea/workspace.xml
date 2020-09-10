@@ -2,167 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.swagger-codegen-ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/dao/RmsDriverDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/entity/RmsDriverEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/entity/RmsDriverExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/dao/PageParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/api/RmsDriverApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverExistsCodeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverExistsCodeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverExistsNameRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverExistsNameResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetModelRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetModelResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetPageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetPageParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetPageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetPageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetTotalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverGetTotalResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverSaveModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverSaveRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverSaveResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverUpdateStatusRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/model/RmsDriverUpdateStatusResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/RmsDriverMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/rms/dao/RmsDriverMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/src/main/java/org/springframework/boot/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/src/main/resources/generator/generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/src/test/java/org/springframework/boot/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/.swagger-codegen-ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/.swagger-codegen/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/api/RmsDriverApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsCodeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsCodeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsNameRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsNameResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetModelRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetModelResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetTotalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetTotalResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverSaveModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverSaveRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverSaveResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverUpdateStatusRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverUpdateStatusResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger-generate/swagger-generate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/controller/RmsDriverController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/daoExt/RmsDriverDaoExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/mapperExt/RmsDriverMapperExt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/service/RmsDriverService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mybatis-generate-custome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatis-generate-custome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/controller/LogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/daoExt/LogDaoExt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/mapperExt/LogMapperExt.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/service/LogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/user/dao/UserLogConfigMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/user/dao/UserLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/api/RmsDriverApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger/api/RmsDriverApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/daoExt.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/daoExt.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mapperExt.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mapperExt.xml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/GeneratorH2Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateBusinessCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateModelCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateResourceSql.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateSwaggerCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAutoGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeFreemarkerTemplateEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeIFileCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeInjectionConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomePackageConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTableInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/entity/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/model/GenerateCompleteSourceModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/model/GenerateModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/generate/model/GenerateResourceModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/BigDecimalUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/CamelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/DateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/ExceptionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/IntegerUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/JsonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/ListUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/LongUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/MailRegex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/MapDistanceUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/MobliePhoneRegex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/PinYinUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/RandomUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/ReflectUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/RequestUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/SqlUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/baomidou/mybatisplus/samples/generator/utils/URIUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/data-h2.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema-h2.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generator/generator.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generator/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/user/dao/UserLogConfigMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/user/dao/UserLogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spy.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/controller.java.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/daoExt.java.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/mapperExt.xml.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/service.java.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mybatisplus.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/templates/MyEntityTemplate.java.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/java/org/springframework/boot/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/resources/generator/generator.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/resources/generator/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/all/index.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/api.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/common.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/exists-code.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/exists-name.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/get-model.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/get-page.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/get-total.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/save.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/model/update-status.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/apis/rms-driver/rms-driver-api.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/models/common/page-param.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/main/swagger-spec/models/response.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/src/test/java/org/springframework/boot/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/.swagger-codegen-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/api/RmsDriverApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsCodeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsCodeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsNameRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverExistsNameResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetModelRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetModelResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetPageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetTotalRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverGetTotalResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverSaveModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverSaveResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverUpdateStatusRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-codegen/src/main/java/com/baomidou/controller/model/RmsDriverUpdateStatusResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-generate/swagger-generate.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,38 +275,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="299" y="6" key="CommitChangelistDialog2" timestamp="1599702757473">
+    <state x="299" y="6" key="CommitChangelistDialog2" timestamp="1599726156196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599702757473" />
+    <state x="299" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599726156196" />
     <state width="478" height="466" key="DebuggerActiveHint" timestamp="1599701445809">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="478" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1599701445809" />
-    <state x="26" y="51" width="1350" height="638" key="DiffContextDialog" timestamp="1599708481328">
+    <state x="26" y="51" width="1350" height="638" key="DiffContextDialog" timestamp="1599726062668">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="26" y="51" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1599708481328" />
+    <state x="26" y="51" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1599726062668" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599660491900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1599717873831">
+    <state width="1164" height="329" key="GridCell.Tab.0.bottom" timestamp="1599726143643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599717873831" />
-    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1599717873831">
+    <state width="1164" height="329" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599726143643" />
+    <state width="1164" height="329" key="GridCell.Tab.0.center" timestamp="1599726143642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599717873831" />
-    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1599717873831">
+    <state width="1164" height="329" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599726143642" />
+    <state width="1164" height="329" key="GridCell.Tab.0.left" timestamp="1599726143642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599717873831" />
-    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1599717873831">
+    <state width="1164" height="329" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599726143642" />
+    <state width="1164" height="329" key="GridCell.Tab.0.right" timestamp="1599726143643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599717873831" />
+    <state width="1164" height="329" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599726143643" />
     <state width="1493" height="330" key="GridCell.Tab.1.bottom" timestamp="1599706395060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -412,6 +339,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599702765893" />
+    <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="415" y="146" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599726051944" />
     <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1599717164087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

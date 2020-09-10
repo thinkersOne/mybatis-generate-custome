@@ -5,7 +5,6 @@
  */
 package com.baomidou.swagger.api;
 
-import com.baomidou.controller.model.*;
 import com.baomidou.swagger.model.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;
