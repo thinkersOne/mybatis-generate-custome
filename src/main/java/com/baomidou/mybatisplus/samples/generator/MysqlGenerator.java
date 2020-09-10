@@ -60,9 +60,7 @@ public class MysqlGenerator {
         pc.setModuleName(generateModel.getModuleName());
         pc.setParent(generateModel.getParentPackage());
         pc.setDaoExt(generateModel.getDaoExtPackageName());
-        pc.setMapper(generateModel.getMapperExtPath());
-        // 设置 mapper 扩展类
-        pc.setMapper(generateModel.getMapperExtPath());
+        pc.setMapperExt(generateModel.getMapperExtPath());
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -73,16 +71,16 @@ public class MysqlGenerator {
             }
         };
         // mapper.xml文件
-        List<FileOutConfig> focList = new ArrayList<>();
-        focList.add(new FileOutConfig("/templates/mapper.xml.ftl") {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                // 自定义输入文件名称
-                return generateModel.getMapperPath() + pc.getModuleName()
-                        + "/" + tableInfo.getEntityName() + "MapperExt" + StringPool.DOT_XML;
-            }
-        });
-        cfg.setFileOutConfigList(focList);
+//        List<FileOutConfig> focList = new ArrayList<>();
+//        focList.add(new FileOutConfig("/templates/mapper.xml.ftl") {
+//            @Override
+//            public String outputFile(TableInfo tableInfo) {
+//                // 自定义输入文件名称
+//                return generateModel.getMapperPath() + pc.getModuleName()
+//                        + "/" + tableInfo.getEntityName() + "MapperExt" + StringPool.DOT_XML;
+//            }
+//        });
+//        cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 
         //配置自定义模板

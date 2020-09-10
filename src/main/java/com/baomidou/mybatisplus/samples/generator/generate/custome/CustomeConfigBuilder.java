@@ -54,8 +54,8 @@ public class CustomeConfigBuilder{
 
     public CustomeConfigBuilder(CustomePackageConfig packageConfig, DataSourceConfig dataSourceConfig,
         StrategyConfig strategyConfig, CustomeTemplateConfig template, GlobalConfig globalConfig) {
-        this.globalConfig = (GlobalConfig) Optional.ofNullable(globalConfig).orElseGet(GlobalConfig::new);
-        this.template = (CustomeTemplateConfig)Optional.ofNullable(template).orElseGet(CustomeTemplateConfig::new);
+        this.globalConfig = Optional.ofNullable(globalConfig).orElseGet(GlobalConfig::new);
+        this.template = Optional.ofNullable(template).orElseGet(CustomeTemplateConfig::new);
         if (null == packageConfig) {
             this.handlerPackage(this.template, this.globalConfig.getOutputDir(), new CustomePackageConfig());
         } else {
@@ -63,7 +63,7 @@ public class CustomeConfigBuilder{
         }
         this.dataSourceConfig = dataSourceConfig;
         this.handlerDataSource(dataSourceConfig);
-        this.strategyConfig = (StrategyConfig)Optional.ofNullable(strategyConfig).orElseGet(StrategyConfig::new);
+        this.strategyConfig = Optional.ofNullable(strategyConfig).orElseGet(StrategyConfig::new);
         this.commentSupported = !dataSourceConfig.getDbType().equals(DbType.SQLITE);
         this.handlerStrategy(this.strategyConfig);
     }
@@ -398,16 +398,22 @@ public class CustomeConfigBuilder{
             // daoExt
             tableInfo.setDaoExtName(entityName + "DaoExt");
 
+//            if (StringUtils.isNotBlank(this.globalConfig.getXmlName())) {
+//                tableInfo.setXmlName(String.format(this.globalConfig.getXmlName(), entityName));
+//            } else {
+//                tableInfo.setXmlName(entityName + "Mapper");
+//            }
+
             if (StringUtils.isNotBlank(this.globalConfig.getXmlName())) {
-                tableInfo.setXmlName(String.format(this.globalConfig.getXmlName(), entityName));
+                tableInfo.setMapperExtName(String.format(this.globalConfig.getXmlName(), entityName));
             } else {
-                tableInfo.setXmlName(entityName + "MapperExt");
+                tableInfo.setMapperExtName(entityName + "MapperExt");
             }
 
             if (StringUtils.isNotBlank(this.globalConfig.getServiceName())) {
                 tableInfo.setServiceName(String.format(this.globalConfig.getServiceName(), entityName));
             } else {
-                tableInfo.setServiceName("I" + entityName + "Service");
+                tableInfo.setServiceName(entityName + "Service");
             }
 
 //            if (StringUtils.isNotBlank(this.globalConfig.getServiceImplName())) {
@@ -665,8 +671,8 @@ public class CustomeConfigBuilder{
         this.packageInfo.put("ModuleName", config.getModuleName());
         this.packageInfo.put("Entity", this.joinPackage(config.getParent(), config.getEntity()));
         //更改成 MapperExt
-        this.packageInfo.put("MapperExt", this.joinPackage(config.getParent(), config.getMapper()));
-        this.packageInfo.put("Xml", this.joinPackage(config.getParent(), config.getXml()));
+        this.packageInfo.put("MapperExt", this.joinPackage(config.getParent(), config.getMapperExt()));
+//        this.packageInfo.put("Xml", this.joinPackage(config.getParent(), config.getXml()));
         this.packageInfo.put("Service", this.joinPackage(config.getParent(), config.getService()));
 //        this.packageInfo.put("ServiceImpl", this.joinPackage(config.getParent(), config.getServiceImpl()));
         this.packageInfo.put("Controller", this.joinPackage(config.getParent(), config.getController()));
@@ -685,11 +691,12 @@ public class CustomeConfigBuilder{
             this.pathInfo = CollectionUtils.newHashMapWithExpectedSize(6);
 //            this.setPathInfo(this.pathInfo, template.getEntity(this.getGlobalConfig().isKotlin()), outputDir, "entity_path", "Entity");
 //            this.setPathInfo(this.pathInfo, template.getMapper(), outputDir, "mapper_path", "Mapper");
-            this.setPathInfo(this.pathInfo, template.getXml(), outputDir, "xml_path", "Xml");
+//            this.setPathInfo(this.pathInfo, template.getXml(), outputDir, "xml_path", "Xml");
             this.setPathInfo(this.pathInfo, template.getService(), outputDir, "service_path", "Service");
 //            this.setPathInfo(this.pathInfo, template.getServiceImpl(), outputDir, "service_impl_path", "ServiceImpl");
             this.setPathInfo(this.pathInfo, template.getController(), outputDir, "controller_path", "Controller");
             this.setPathInfo(this.pathInfo,template.getDaoExt(),outputDir,"daoExt_path","DaoExt");
+            this.setPathInfo(this.pathInfo,template.getMapperExt(),outputDir,"mapperExt_path","MapperExt");
         }
     }
 

@@ -135,18 +135,18 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                         this.writerFile(objectMap, this.templateFilePath(template.getEntity(this.getCustomeConfigBuilder().getGlobalConfig().isKotlin())), controllerFile);
                     }
                 }
-                if (null != tableInfo.getMapperName() && null != pathInfo.get("mapper_path")) {
-                    controllerFile = String.format((String)pathInfo.get("mapper_path") + File.separator + tableInfo.getMapperName() + this.suffixJavaOrKt(), entityName);
-                    if (this.isCreate(FileType.MAPPER, controllerFile)) {
-                        this.writerFile(objectMap, this.templateFilePath(template.getMapper()), controllerFile);
-                    }
-                }
-                if (null != tableInfo.getXmlName() && null != pathInfo.get("xml_path")) {
-                    controllerFile = String.format((String)pathInfo.get("xml_path") + File.separator + tableInfo.getXmlName() + ".xml", entityName);
-                    if (this.isCreate(FileType.XML, controllerFile)) {
-                        this.writerFile(objectMap, this.templateFilePath(template.getXml()), controllerFile);
-                    }
-                }
+//                if (null != tableInfo.getMapperName() && null != pathInfo.get("mapper_path")) {
+//                    controllerFile = String.format((String)pathInfo.get("mapper_path") + File.separator + tableInfo.getMapperName() + this.suffixJavaOrKt(), entityName);
+//                    if (this.isCreate(FileType.MAPPER, controllerFile)) {
+//                        this.writerFile(objectMap, this.templateFilePath(template.getMapper()), controllerFile);
+//                    }
+//                }
+//                if (null != tableInfo.getXmlName() && null != pathInfo.get("xml_path")) {
+//                    controllerFile = String.format((String)pathInfo.get("xml_path") + File.separator + tableInfo.getXmlName() + ".xml", entityName);
+//                    if (this.isCreate(FileType.XML, controllerFile)) {
+//                        this.writerFile(objectMap, this.templateFilePath(template.getXml()), controllerFile);
+//                    }
+//                }
                 if (null != tableInfo.getServiceName() && null != pathInfo.get("service_path")) {
                     controllerFile = String.format((String)pathInfo.get("service_path") + File.separator + tableInfo.getServiceName() + this.suffixJavaOrKt(), entityName);
                     if (this.isCreate(FileType.SERVICE, controllerFile)) {
@@ -169,6 +169,12 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                     controllerFile = String.format((String)pathInfo.get("daoExt_path") + File.separator + tableInfo.getDaoExtName() + this.suffixJavaOrKt(), entityName);
                     if (this.isCreate(FileType.OTHER, controllerFile)) {
                         this.writerFile(objectMap, this.templateFilePath(template.getDaoExt()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("mapperExt_path")) {
+                    controllerFile = String.format((String)pathInfo.get("mapperExt_path") + File.separator + tableInfo.getMapperExtName()  + ".xml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getMapperExt()), controllerFile);
                     }
                 }
             }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author lizhihao
- * @since 2020-09-09
+ * @since 2020-09-10
  */
 @RestController
 @RequestMapping("/log")

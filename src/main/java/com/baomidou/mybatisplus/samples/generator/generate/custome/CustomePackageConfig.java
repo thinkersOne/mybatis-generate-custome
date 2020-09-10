@@ -4,6 +4,15 @@ import com.baomidou.mybatisplus.generator.config.PackageConfig;
 
 public class CustomePackageConfig extends PackageConfig {
     private String daoExt = "daoExt";
+    private String mapperExt = "mapperExt";
+
+    public String getMapperExt() {
+        return mapperExt;
+    }
+
+    public void setMapperExt(String mapperExt) {
+        this.mapperExt = mapperExt;
+    }
 
     public String getDaoExt() {
         return daoExt;

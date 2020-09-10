@@ -10,22 +10,22 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author lizhihao
- * @since 2020-09-09
+ * @since 2020-09-10
  */
 @Service
-public class ILogService{
+public class LogService{
    //列表查询
-   public ILogServiceGetPageResponse getPage(ILogServiceGetPageRequest request) {
-       ILogServiceGetPageResponse response = new ILogServiceGetPageResponse();
-        List<ILogServiceEntity> list = daoExt.getPage(SqlPageParam.create(request.getPageParam()), request.getQueryParam());
-       List<ILogServiceGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
+   public LogServiceGetPageResponse getPage(LogServiceGetPageRequest request) {
+       LogServiceGetPageResponse response = new LogServiceGetPageResponse();
+        List<LogServiceEntity> list = daoExt.getPage(SqlPageParam.create(request.getPageParam()), request.getQueryParam());
+       List<LogServiceGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
        response.setData(data);
        response.setCode(Response.OK);
        return response;
    }
    //获取总数
-   public ILogServiceGetTotalResponse getTotal(@RequestBody ILogServiceGetTotalRequest request) {
-       ILogServiceGetTotalResponse response = new ILogServiceGetTotalResponse();
+   public LogServiceGetTotalResponse getTotal(@RequestBody LogServiceGetTotalRequest request) {
+       LogServiceGetTotalResponse response = new LogServiceGetTotalResponse();
        long total = daoExt.getCount(request.getQueryParam());
        response.setTotal(total);
        response.setCode(Response.OK);
@@ -38,28 +38,28 @@ public class ILogService{
         * @param request
         * @return
         */
-       public ILogServiceSaveResponse save(ILogServiceSaveRequest request, AdminSessionInfo sessionInfo) {
-           ILogServiceSaveResponse response = this.check(request);
+       public LogServiceSaveResponse save(LogServiceSaveRequest request, AdminSessionInfo sessionInfo) {
+           LogServiceSaveResponse response = this.check(request);
            if (response.getCode() < 1) {
                return response;
            }
            OpLogWriter opLogWriter = this.logService.newOpLogWriter(sessionInfo.getSysUserName());
-           ILogServiceEntity entity = null;
+           LogServiceEntity entity = null;
            if (request.getModel().getId() != null && request.getModel().getId() > 0) {
            entity = dao.selectByPrimaryKey(request.getModel().getId());
            opLogWriter.setOldEntity(entity);
            }
-           entity = loadILogServiceEntity(request.getModel(),entity, sessionInfo);
+           entity = loadLogServiceEntity(request.getModel(),entity, sessionInfo);
            Map<String, Object> mapNew = ToMapUtil.toMap(entity);
            if (entity.getId() == null) {
            //新增
            entity.setId(this.generator.nextId());
            dao.insertSelective(entity);
-           opLogWriter.setOperationType(EnumOperationType.ILogServiceAdd);
+           opLogWriter.setOperationType(EnumOperationType.LogServiceAdd);
            } else {
            //更新
            dao.updateByPrimaryKeySelective(entity);
-           opLogWriter.setOperationType(EnumOperationType.ILogServiceUpdate);
+           opLogWriter.setOperationType(EnumOperationType.LogServiceUpdate);
 
            }
            opLogWriter.setNewEntity(entity)
@@ -71,10 +71,10 @@ public class ILogService{
     /**
     * 保存
     */
-    public ILogServiceEntity loadILogServiceEntity(ILogServiceSaveModel saveModel,
-    ILogServiceEntity entity,AdminSessionInfo sessionInfo){
+    public LogServiceEntity loadLogServiceEntity(LogServiceSaveModel saveModel,
+    LogServiceEntity entity,AdminSessionInfo sessionInfo){
             if (entity == null) {
-                entity = new ILogServiceEntity();
+                entity = new LogServiceEntity();
                 entity.setTenantId(sessionInfo.getCurrentTenantId());
                 entity.setCreateUser(sessionInfo.getSysUserName());
                 entity.setCreateTime(new Date());
@@ -94,40 +94,40 @@ public class ILogService{
             return  entity;
     }
     // check
-    public ILogServiceSaveResponse check(ILogServiceSaveRequest request) {
-        ILogServiceSaveResponse response = new ILogServiceSaveResponse();
-        EnumILogServiceErrorCode error = EnumILogServiceErrorCode.OK;
+    public LogServiceSaveResponse check(LogServiceSaveRequest request) {
+        LogServiceSaveResponse response = new LogServiceSaveResponse();
+        EnumLogServiceErrorCode error = EnumLogServiceErrorCode.OK;
         if (request == null || request.getModel() == null) {
-            error = EnumILogServiceErrorCode.NOT_NULL;
+            error = EnumLogServiceErrorCode.NOT_NULL;
         }
-        ILogServiceSaveModel model = request.getModel();
+        LogServiceSaveModel model = request.getModel();
         response.setCode(error.getCode());
         response.setMessage(error.getMessage());
         return response;
     }
     // 获取详情
-    public ILogServiceGetModelResponse getModel(ILogServiceGetModelRequest request) {
-            ILogServiceGetModelResponse response = new ILogServiceGetModelResponse();
-            ILogServiceEntity entity = dao.selectByPrimaryKey(request.getId());
-            ILogServiceSaveModel saveModel = new ILogServiceSaveModel();
+    public LogServiceGetModelResponse getModel(LogServiceGetModelRequest request) {
+            LogServiceGetModelResponse response = new LogServiceGetModelResponse();
+            LogServiceEntity entity = dao.selectByPrimaryKey(request.getId());
+            LogServiceSaveModel saveModel = new LogServiceSaveModel();
             saveModel.setBalanceAmount(entity.getBalanceAmount());
             saveModel.setCardNo(entity.getCardNo());
             saveModel.setCarrierType(entity.getCarrierType());
             saveModel.setDriverId(entity.getDriverId());
             saveModel.setId(entity.getId());
             saveModel.setOilCardType(entity.getOilCardType());
-            saveModel.setOilCardTypeName(EnumILogServiceType.getText(entity.getOilCardType()));
+            saveModel.setOilCardTypeName(EnumLogServiceType.getText(entity.getOilCardType()));
             saveModel.setOperationMode(entity.getOperationMode());
-            saveModel.setOperationModeName(EnumILogServiceOperationMode.getText(entity.getOperationMode()));
+            saveModel.setOperationModeName(EnumLogServiceOperationMode.getText(entity.getOperationMode()));
             saveModel.setRemark(entity.getRemark());
             saveModel.setRmsMotorcadeId(entity.getRmsMotorcadeId());
             saveModel.setSellerCompanyId(entity.getSellerCompanyId());
             saveModel.setStatus(entity.getStatus());
-            saveModel.setStatusName(EnumILogServiceStatus.getText(entity.getStatus()));
+            saveModel.setStatusName(EnumLogServiceStatus.getText(entity.getStatus()));
             saveModel.setLossStatus(entity.getLossStatus());
-            saveModel.setLossStatusName(EnumILogServiceLossStatus.getText(entity.getLossStatus()));
+            saveModel.setLossStatusName(EnumLogServiceLossStatus.getText(entity.getLossStatus()));
             saveModel.setAllocationStatus(entity.getAllocationStatus());
-            saveModel.setAllocationStatusName(EnumILogServiceAllocationStatus.getText(entity.getAllocationStatus()));
+            saveModel.setAllocationStatusName(EnumLogServiceAllocationStatus.getText(entity.getAllocationStatus()));
             saveModel.setVehicleLicense(entity.getVehicleLicense());
             saveModel.setRmsVehicleId(entity.getRmsVehicleId());
             saveModel.setSupplierId(entity.getSupplierId());
@@ -169,15 +169,15 @@ public class ILogService{
             return info;
     }
     // 导出
-    public ExcelFileInfo<ILogServiceGetPageModel> getExportMeta(String fileName, List<ILogServiceGetPageModel> dataSource) {
-        ExcelFileInfo<ILogServiceGetPageModel> info = getImportMeta();
+    public ExcelFileInfo<LogServiceGetPageModel> getExportMeta(String fileName, List<LogServiceGetPageModel> dataSource) {
+        ExcelFileInfo<LogServiceGetPageModel> info = getImportMeta();
         info.setDataSource(dataSource);
         info.setFileName(fileName);
         return info;
     }
     // 列表转化
-    private ILogServiceGetPageModel toPageModel(ILogServiceEntity entity) {
-            ILogServiceetPageModel model = new ILogServiceGetPageModel();
+    private LogServiceGetPageModel toPageModel(LogServiceEntity entity) {
+            LogServiceetPageModel model = new LogServiceGetPageModel();
 
             model.setBalanceAmount(entity.getBalanceAmount());
 
@@ -232,18 +232,18 @@ public class ILogService{
             return model;
      }
     // 获取导出数据
-    public List<ILogServiceGetPageModel> getExportDataSource(ILogServiceGetPageParam pageParam) {
-        List<ILogServiceEntity> list = daoExt.getByWhere(pageParam);
-        List<ILogServiceGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
+    public List<LogServiceGetPageModel> getExportDataSource(LogServiceGetPageParam pageParam) {
+        List<LogServiceEntity> list = daoExt.getByWhere(pageParam);
+        List<LogServiceGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
         setOtherInfo(data);
         return data;
     }
 
     // 更新状态
-    public ILogServiceUpdateStatusResponse updateStatus(ILogServiceUpdateStatusRequest request) {
-        ILogServiceUpdateStatusResponse response = new ILogServiceUpdateStatusResponse();
+    public LogServiceUpdateStatusResponse updateStatus(LogServiceUpdateStatusRequest request) {
+        LogServiceUpdateStatusResponse response = new LogServiceUpdateStatusResponse();
         response.setCode(Response.OK);
-        ILogServiceEntity entity = new ILogServiceEntity();
+        LogServiceEntity entity = new LogServiceEntity();
         entity.setStatus(request.getStatus());
         entity.setId(request.getId());
         dao.updateByPrimaryKeySelective(entity);
