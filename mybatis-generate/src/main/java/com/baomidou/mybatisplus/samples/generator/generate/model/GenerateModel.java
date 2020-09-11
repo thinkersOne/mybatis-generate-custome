@@ -43,6 +43,35 @@ public class GenerateModel {
      */
     private String daoExtPackageName;
 
+    // swagger 相关设置
+    private String indexYamlPackageName;
+    private String apisYamlPackageName;
+    private String modelsYamlPackageName;
+
+    public String getIndexYamlPackageName() {
+        return indexYamlPackageName;
+    }
+
+    public void setIndexYamlPackageName(String indexYamlPackageName) {
+        this.indexYamlPackageName = indexYamlPackageName;
+    }
+
+    public String getApisYamlPackageName() {
+        return apisYamlPackageName;
+    }
+
+    public void setApisYamlPackageName(String apisYamlPackageName) {
+        this.apisYamlPackageName = apisYamlPackageName;
+    }
+
+    public String getModelsYamlPackageName() {
+        return modelsYamlPackageName;
+    }
+
+    public void setModelsYamlPackageName(String modelsYamlPackageName) {
+        this.modelsYamlPackageName = modelsYamlPackageName;
+    }
+
     public String getDaoExtPackageName() {
         return daoExtPackageName;
     }

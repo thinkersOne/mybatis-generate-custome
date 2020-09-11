@@ -56,11 +56,7 @@ public class MysqlGenerator {
 
         // 包配置
         CustomePackageConfig pc = new CustomePackageConfig();
-        pc.setEntity(generateModel.getEntityParentPackageName());
         pc.setModuleName(generateModel.getModuleName());
-        pc.setParent(generateModel.getParentPackage());
-        pc.setDaoExt(generateModel.getDaoExtPackageName());
-        pc.setMapperExt(generateModel.getMapperExtPath());
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -84,7 +80,7 @@ public class MysqlGenerator {
         mpg.setCfg(cfg);
 
         //配置自定义模板
-        TemplateConfig templateConfig = new TemplateConfig();
+        CustomeTemplateConfig templateConfig = new CustomeTemplateConfig();
         mpg.setTemplate(templateConfig);
 
         // 策略配置
@@ -114,16 +110,7 @@ public class MysqlGenerator {
         generateModel.setOutputDir(projectPath + "/src/main/java");
         generateModel.setAuthor("lizhihao");
         generateModel.setModuleName("rms");
-        generateModel.setParentPackage("com.baomidou.mybatisplus.samples.generator");
-        generateModel.setMapperPath(projectPath + "/src/main/resources/mapper/");
         generateModel.setTableNames("rms_driver");
-        //生成 mapperExt 地址
-        generateModel.setMapperExtPath("mapperExt");
-        // entity 所在包的名称
-        generateModel.setEntityParentPackageName("model");
-        // daoExt 所在包名
-        generateModel.setDaoExtPackageName("daoExt");
-//        generateModel.setServiceTemplateName("/templates/service.java");
         generate(generateModel);
     }
 

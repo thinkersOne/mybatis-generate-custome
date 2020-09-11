@@ -177,6 +177,15 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                         this.writerFile(objectMap, this.templateFilePath(template.getMapperExt()), controllerFile);
                     }
                 }
+
+                //设置swagger
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("indexYaml_path")) {
+                    controllerFile = String.format((String)pathInfo.get("indexYaml_path") + File.separator + "index"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getIndex()), controllerFile);
+                    }
+                }
+
             }
         } catch (Exception var11) {
             logger.error("无法创建文件，请检查配置信息！", var11);

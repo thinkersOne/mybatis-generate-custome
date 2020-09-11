@@ -677,6 +677,12 @@ public class CustomeConfigBuilder{
 //        this.packageInfo.put("ServiceImpl", this.joinPackage(config.getParent(), config.getServiceImpl()));
         this.packageInfo.put("Controller", this.joinPackage(config.getParent(), config.getController()));
         this.packageInfo.put("DaoExt",this.joinPackage(config.getParent(),config.getDaoExt()));
+
+        //设置 swagger 参数
+        this.packageInfo.put("IndexYaml",this.joinPackage(config.getParent(),config.getIndexYaml()));
+        this.packageInfo.put("ApisYaml",this.joinPackage(config.getParent(),config.getApisYaml()));
+        this.packageInfo.put("ModelsYaml",this.joinPackage(config.getParent(),config.getModelsYaml()));
+
         // 设置 ftl中的 其他参数
         this.packageInfo.put("limitArgs","#{pageParam.offset},#{pageParam.limit}");
         this.packageInfo.put("pageWhereLike","(`code` like concat(#{queryParam.keyword},'%')\n" +
@@ -697,6 +703,10 @@ public class CustomeConfigBuilder{
             this.setPathInfo(this.pathInfo, template.getController(), outputDir, "controller_path", "Controller");
             this.setPathInfo(this.pathInfo,template.getDaoExt(),outputDir,"daoExt_path","DaoExt");
             this.setPathInfo(this.pathInfo,template.getMapperExt(),outputDir,"mapperExt_path","MapperExt");
+
+            // 设置 swagger
+            this.setPathInfo(this.pathInfo,template.getIndex(),outputDir,"indexYaml_path","IndexYaml");
+
         }
     }
 

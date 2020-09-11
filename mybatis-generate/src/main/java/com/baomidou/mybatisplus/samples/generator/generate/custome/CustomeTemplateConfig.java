@@ -14,6 +14,113 @@ public class CustomeTemplateConfig {
     private String mapperExt = "/templates/mapperExt.xml";
     private String daoExt = "/templates/daoExt.java";
 
+    //设置 swagger yaml文件
+    // index.yaml
+    private String index = "/templates/index.yaml";
+    // apis部分
+    // common.yaml
+    private String common = "/templates/common.yaml";
+    // exists-code.yaml
+    private String existsCode = "/templates/exists-code.yaml";
+    // exists-name.yaml
+    private String existsName = "/templates/exists-name.yaml";
+    // get-model.yaml
+    private String getModel = "/templates/get-model.yaml";
+    // get-page.yaml
+    private String getPage = "/templates/get-page.yaml";
+    // get-total.yaml
+    private String getTotal = "/templates/get-total.yaml";
+    // save.yaml
+    private String save = "/templates/save.yaml";
+    // update-status.yaml
+    private String updateStatus = "/templates/update-status.yaml";
+    // 设置 api  里面包含所有接口定义
+    private String modelApi = "/templates/model-api.yaml";
+
+    public String getEntity() {
+        return entity;
+    }
+
+    public String getIndex() {
+        return index;
+    }
+
+    public void setIndex(String index) {
+        this.index = index;
+    }
+
+    public String getCommon() {
+        return common;
+    }
+
+    public void setCommon(String common) {
+        this.common = common;
+    }
+
+    public String getExistsCode() {
+        return existsCode;
+    }
+
+    public void setExistsCode(String existsCode) {
+        this.existsCode = existsCode;
+    }
+
+    public String getExistsName() {
+        return existsName;
+    }
+
+    public void setExistsName(String existsName) {
+        this.existsName = existsName;
+    }
+
+    public String getGetModel() {
+        return getModel;
+    }
+
+    public void setGetModel(String getModel) {
+        this.getModel = getModel;
+    }
+
+    public String getGetPage() {
+        return getPage;
+    }
+
+    public void setGetPage(String getPage) {
+        this.getPage = getPage;
+    }
+
+    public String getGetTotal() {
+        return getTotal;
+    }
+
+    public void setGetTotal(String getTotal) {
+        this.getTotal = getTotal;
+    }
+
+    public String getSave() {
+        return save;
+    }
+
+    public void setSave(String save) {
+        this.save = save;
+    }
+
+    public String getUpdateStatus() {
+        return updateStatus;
+    }
+
+    public void setUpdateStatus(String updateStatus) {
+        this.updateStatus = updateStatus;
+    }
+
+    public String getModelApi() {
+        return modelApi;
+    }
+
+    public void setModelApi(String modelApi) {
+        this.modelApi = modelApi;
+    }
+
     public String getEntity(boolean kotlin) {
         return kotlin ? this.entityKt : this.entity;
     }
