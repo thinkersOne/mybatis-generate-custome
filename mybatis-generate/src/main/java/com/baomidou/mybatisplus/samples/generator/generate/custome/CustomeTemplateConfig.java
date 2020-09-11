@@ -36,6 +36,25 @@ public class CustomeTemplateConfig {
     private String updateStatus = "/templates/update-status.yaml";
     // 设置 api  里面包含所有接口定义
     private String apis = "/templates/apis.yaml";
+    // models 部分
+    private String pageParam = "/templates/page-param.yaml";
+    private String response = "/templates/response.yaml";
+
+    public String getPageParam() {
+        return pageParam;
+    }
+
+    public void setPageParam(String pageParam) {
+        this.pageParam = pageParam;
+    }
+
+    public String getResponse() {
+        return response;
+    }
+
+    public void setResponse(String response) {
+        this.response = response;
+    }
 
     public String getEntity() {
         return entity;

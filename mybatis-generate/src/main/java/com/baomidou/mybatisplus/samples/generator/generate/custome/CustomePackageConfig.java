@@ -12,6 +12,15 @@ public class CustomePackageConfig extends PackageConfig {
     private String apisYaml = "swagger-spec.apis";
     private String apisModelYaml = "swagger-spec.apis.model";
     private String modelsYaml = "swagger-spec.models";
+    private String modelsCommonYaml = "swagger-spec.models.common";
+
+    public String getModelsCommonYaml() {
+        return modelsCommonYaml;
+    }
+
+    public void setModelsCommonYaml(String modelsCommonYaml) {
+        this.modelsCommonYaml = modelsCommonYaml;
+    }
 
     public String getApisModelYaml() {
         return apisModelYaml;

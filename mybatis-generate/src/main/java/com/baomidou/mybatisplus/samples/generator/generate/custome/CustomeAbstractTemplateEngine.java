@@ -154,12 +154,12 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                         this.writerFile(objectMap, this.templateFilePath(template.getService()), controllerFile);
                     }
                 }
-                if (null != tableInfo.getServiceImplName() && null != pathInfo.get("service_impl_path")) {
-                    controllerFile = String.format((String)pathInfo.get("service_impl_path") + File.separator + tableInfo.getServiceImplName() + this.suffixJavaOrKt(), entityName);
-                    if (this.isCreate(FileType.SERVICE_IMPL, controllerFile)) {
-                        this.writerFile(objectMap, this.templateFilePath(template.getServiceImpl()), controllerFile);
-                    }
-                }
+//                if (null != tableInfo.getServiceImplName() && null != pathInfo.get("service_impl_path")) {
+//                    controllerFile = String.format((String)pathInfo.get("service_impl_path") + File.separator + tableInfo.getServiceImplName() + this.suffixJavaOrKt(), entityName);
+//                    if (this.isCreate(FileType.SERVICE_IMPL, controllerFile)) {
+//                        this.writerFile(objectMap, this.templateFilePath(template.getServiceImpl()), controllerFile);
+//                    }
+//                }
                 if (null != tableInfo.getControllerName() && null != pathInfo.get("controller_path")) {
                     controllerFile = String.format((String)pathInfo.get("controller_path") + File.separator + tableInfo.getControllerName() + this.suffixJavaOrKt(), entityName);
                     if (this.isCreate(FileType.CONTROLLER, controllerFile)) {
@@ -191,6 +191,76 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                             + StringUtil.getMiddleLineName(tableInfo.getName()) + "-api"  + ".yaml", entityName);
                     if (this.isCreate(FileType.OTHER, controllerFile)) {
                         this.writerFile(objectMap, this.templateFilePath(template.getApis()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("common_path")) {
+                    controllerFile = String.format((String)pathInfo.get("common_path") + File.separator
+                            + "common"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getCommon()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("existsCode_path")) {
+                    controllerFile = String.format((String)pathInfo.get("existsCode_path") + File.separator
+                            + "exists-code"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getExistsCode()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("existsName_path")) {
+                    controllerFile = String.format((String)pathInfo.get("existsName_path") + File.separator
+                            + "exists-name"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getExistsName()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getModel_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getModel_path") + File.separator
+                            + "get-model"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetModel()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getPage_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getPage_path") + File.separator
+                            + "get-page"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetPage()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getTotal_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getTotal_path") + File.separator
+                            + "get-total"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetTotal()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("save_path")) {
+                    controllerFile = String.format((String)pathInfo.get("save_path") + File.separator
+                            + "save"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getSave()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("updateStatus_path")) {
+                    controllerFile = String.format((String)pathInfo.get("updateStatus_path") + File.separator
+                            + "update-status"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getUpdateStatus()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("pageParam_path")) {
+                    controllerFile = String.format((String)pathInfo.get("pageParam_path") + File.separator
+                            + "page-param"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getPageParam()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("response_path")) {
+                    controllerFile = String.format((String)pathInfo.get("response_path") + File.separator
+                            + "response"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getResponse()), controllerFile);
                     }
                 }
 

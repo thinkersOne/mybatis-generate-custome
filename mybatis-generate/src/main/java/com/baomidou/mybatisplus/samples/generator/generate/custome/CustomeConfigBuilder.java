@@ -682,6 +682,7 @@ public class CustomeConfigBuilder{
         this.packageInfo.put("IndexYaml",this.joinPackage(config.getParent(),config.getIndexYaml()));
         this.packageInfo.put("ApisYaml",this.joinPackage(config.getParent(),config.getApisYaml()));
         this.packageInfo.put("ModelsYaml",this.joinPackage(config.getParent(),config.getModelsYaml()));
+        this.packageInfo.put("ModelsCommonYaml",this.joinPackage(config.getParent(),config.getModelsCommonYaml()));
 
         // 设置 ftl中的 其他参数
         this.packageInfo.put("limitArgs","#{pageParam.offset},#{pageParam.limit}");
@@ -707,6 +708,17 @@ public class CustomeConfigBuilder{
             // 设置 swagger
             this.setPathInfo(this.pathInfo,template.getIndex(),outputDir,"indexYaml_path","IndexYaml");
             this.setPathInfo(this.pathInfo,template.getApis(),outputDir,"apisYaml_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getCommon(),outputDir,"common_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getExistsCode(),outputDir,"existsCode_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getExistsName(),outputDir,"existsName_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getGetModel(),outputDir,"getModel_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getGetPage(),outputDir,"getPage_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getGetTotal(),outputDir,"getTotal_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getSave(),outputDir,"save_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getUpdateStatus(),outputDir,"updateStatus_path","ApisYaml");
+            this.setPathInfo(this.pathInfo,template.getPageParam(),outputDir,"pageParam_path","ModelsCommonYaml");
+            this.setPathInfo(this.pathInfo,template.getResponse(),outputDir,"response_path","ModelsYaml");
+
         }
     }
 

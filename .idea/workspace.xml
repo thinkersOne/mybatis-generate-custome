@@ -2,24 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/apis.yaml.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/controller/RmsDriverController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/daoExt/RmsDriverDaoExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/mapperExt/RmsDriverMapperExt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/service/RmsDriverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/all/index.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/RmsDriver-api.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/common.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/exists-code.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/exists-name.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/get-model.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/get-page.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/get-total.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/page-param.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/response.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/save.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/update-status.yaml.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/common.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/exists-code.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/exists-name.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-model.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-page.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-total.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/save.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/update-status.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/models/common/page-param.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomePackageConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomePackageConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomePackageConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomePackageConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,18 +75,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-generate/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\my-other-projects\mybatis-generate-custome\mybatis-generate\src\main\resources\templates" />
       <recent name="C:\projects\my-other-projects\mybatis-generate-custome\mybatis-generate\src\main" />
       <recent name="C:\projects\my-other-projects\mybatis-generate-custome\swagger-generate\src\main\resources\generator" />
       <recent name="C:\projects\my-other-projects\mybatis-generate-custome\src\main\resources\generator" />
       <recent name="C:\projects\my-other-projects\mybatis-generate-custome\src\main\resources" />
-      <recent name="C:\projects\my-other-projects\mybatis-generate-custome\src\main\java\com\baomidou\swagger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\my-other-projects\mybatis-generate-custome\mybatis-generate\src\main\resources\templates" />
       <recent name="C:\projects\my-other-projects\mybatis-generate-custome\swagger-generate\src\main\resources" />
       <recent name="C:\projects\my-other-projects\mybatis-generate-custome\swagger-generate\src\main" />
     </key>
@@ -199,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599793125660</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="设置swagger apis.yaml">
+      <created>1599795936076</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599795936077</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,13 +267,14 @@
     <MESSAGE value="swagger自动生成" />
     <MESSAGE value="service 优化" />
     <MESSAGE value="设置swagger index.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置swagger index.yaml" />
+    <MESSAGE value="设置swagger apis.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置swagger apis.yaml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1599793870379">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1599814650779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599793870379" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599814650779" />
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1599660216612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -264,14 +287,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="99" y="6" key="CommitChangelistDialog2" timestamp="1599793124253">
+    <state x="99" y="6" key="CommitChangelistDialog2" timestamp="1599795934773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="99" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599793124253" />
-    <state width="478" height="466" key="DebuggerActiveHint" timestamp="1599791884169">
+    <state x="99" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599795934773" />
+    <state width="478" height="466" key="DebuggerActiveHint" timestamp="1599813979379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="478" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1599791884169" />
+    <state width="478" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1599813979379" />
     <state x="26" y="51" width="1350" height="638" key="DiffContextDialog" timestamp="1599791335819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -280,38 +303,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1069" height="276" key="GridCell.Tab.0.bottom" timestamp="1599795886073">
+    <state width="1075" height="347" key="GridCell.Tab.0.bottom" timestamp="1599814824989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1069" height="276" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599795886073" />
-    <state width="1069" height="276" key="GridCell.Tab.0.center" timestamp="1599795886073">
+    <state width="1075" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599814824989" />
+    <state width="1075" height="347" key="GridCell.Tab.0.center" timestamp="1599814824989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1069" height="276" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599795886073" />
-    <state width="1069" height="276" key="GridCell.Tab.0.left" timestamp="1599795886072">
+    <state width="1075" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599814824989" />
+    <state width="1075" height="347" key="GridCell.Tab.0.left" timestamp="1599814824989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1069" height="276" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599795886072" />
-    <state width="1069" height="276" key="GridCell.Tab.0.right" timestamp="1599795886073">
+    <state width="1075" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599814824989" />
+    <state width="1075" height="347" key="GridCell.Tab.0.right" timestamp="1599814824989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1069" height="276" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599795886073" />
-    <state width="1183" height="330" key="GridCell.Tab.1.bottom" timestamp="1599792324642">
+    <state width="1075" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599814824989" />
+    <state width="1180" height="390" key="GridCell.Tab.1.bottom" timestamp="1599814320607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1183" height="330" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599792324642" />
-    <state width="1183" height="330" key="GridCell.Tab.1.center" timestamp="1599792324641">
+    <state width="1180" height="390" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599814320607" />
+    <state width="1180" height="390" key="GridCell.Tab.1.center" timestamp="1599814320607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1183" height="330" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599792324641" />
-    <state width="1183" height="330" key="GridCell.Tab.1.left" timestamp="1599792324641">
+    <state width="1180" height="390" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599814320607" />
+    <state width="1180" height="390" key="GridCell.Tab.1.left" timestamp="1599814320607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1183" height="330" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599792324641" />
-    <state width="1183" height="330" key="GridCell.Tab.1.right" timestamp="1599792324642">
+    <state width="1180" height="390" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599814320607" />
+    <state width="1180" height="390" key="GridCell.Tab.1.right" timestamp="1599814320607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1183" height="330" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599792324642" />
+    <state width="1180" height="390" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599814320607" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1599790492379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -324,10 +347,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599730135679">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599795944511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599730135679" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599795944511" />
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -336,14 +359,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="180" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1599794044257" />
-    <state x="447" y="145" width="793" height="534" key="find.popup" timestamp="1599795771210">
+    <state x="356" y="76" width="843" height="534" key="find.popup" timestamp="1599814787283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="145" width="793" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599795771210" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1599793128943">
+    <state x="356" y="76" width="843" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599814787283" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1599795938853">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1599793128943" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1599795938853" />
     <state x="262" y="166" key="new project wizard" timestamp="1599726783551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,9 +380,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java</url>
+          <line>718</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeFreemarkerTemplateEngine.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="11" />
+          <line>27</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
