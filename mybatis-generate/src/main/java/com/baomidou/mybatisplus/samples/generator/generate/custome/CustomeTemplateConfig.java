@@ -35,7 +35,7 @@ public class CustomeTemplateConfig {
     // update-status.yaml
     private String updateStatus = "/templates/update-status.yaml";
     // 设置 api  里面包含所有接口定义
-    private String modelApi = "/templates/model-api.yaml";
+    private String apis = "/templates/apis.yaml";
 
     public String getEntity() {
         return entity;
@@ -113,12 +113,12 @@ public class CustomeTemplateConfig {
         this.updateStatus = updateStatus;
     }
 
-    public String getModelApi() {
-        return modelApi;
+    public String getApis() {
+        return apis;
     }
 
-    public void setModelApi(String modelApi) {
-        this.modelApi = modelApi;
+    public void setApis(String apis) {
+        this.apis = apis;
     }
 
     public String getEntity(boolean kotlin) {

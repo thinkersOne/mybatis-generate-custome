@@ -9,6 +9,7 @@ import com.baomidou.mybatisplus.generator.config.builder.ConfigBuilder;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.FileType;
 import com.baomidou.mybatisplus.generator.engine.AbstractTemplateEngine;
+import com.baomidou.mybatisplus.samples.generator.utils.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -183,6 +184,13 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                     controllerFile = String.format((String)pathInfo.get("indexYaml_path") + File.separator + "index"  + ".yaml", entityName);
                     if (this.isCreate(FileType.OTHER, controllerFile)) {
                         this.writerFile(objectMap, this.templateFilePath(template.getIndex()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("apisYaml_path")) {
+                    controllerFile = String.format((String)pathInfo.get("apisYaml_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "-api"  + ".yaml", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getApis()), controllerFile);
                     }
                 }
 

@@ -248,7 +248,10 @@ public class StringUtil {
 //        String id = getCamelCaseString("iphone", true);
 //        System.out.println(id);
 
-        System.out.println(firstStringToUpper("sysOrgRegionId"));
+//        System.out.println(firstStringToUpper("sysOrgRegionId"));
+
+        String str = "rms_driver";
+        System.out.println(getMiddleLineName(str));
 
     }
 

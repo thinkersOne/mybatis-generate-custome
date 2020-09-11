@@ -8,9 +8,18 @@ public class CustomePackageConfig extends PackageConfig {
     private String mapperExt = "mapperExt";
 
     // swagger 模块 yaml文件
-    private String indexYaml = "all";
-    private String apisYaml = "apis";
-    private String modelsYaml = "models";
+    private String indexYaml = "swagger-spec.all";
+    private String apisYaml = "swagger-spec.apis";
+    private String apisModelYaml = "swagger-spec.apis.model";
+    private String modelsYaml = "swagger-spec.models";
+
+    public String getApisModelYaml() {
+        return apisModelYaml;
+    }
+
+    public void setApisModelYaml(String apisModelYaml) {
+        this.apisModelYaml = apisModelYaml;
+    }
 
     public String getIndexYaml() {
         return indexYaml;

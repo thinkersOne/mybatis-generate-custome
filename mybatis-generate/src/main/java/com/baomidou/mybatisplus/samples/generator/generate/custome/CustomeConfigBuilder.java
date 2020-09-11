@@ -706,7 +706,7 @@ public class CustomeConfigBuilder{
 
             // 设置 swagger
             this.setPathInfo(this.pathInfo,template.getIndex(),outputDir,"indexYaml_path","IndexYaml");
-
+            this.setPathInfo(this.pathInfo,template.getApis(),outputDir,"apisYaml_path","ApisYaml");
         }
     }
 
