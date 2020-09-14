@@ -44,6 +44,33 @@ public class CustomeTemplateConfig {
     //设置前端 angular 代码
     private String editHtml = "/templates/angular/edit.html";
     private String editTs = "/templates/angular/edit.ts";
+    private String listCss = "/templates/angular/list.css";
+    private String listHtml = "/templates/angular/list.html";
+    private String listTs = "/templates/angular/list.ts";
+
+    public String getListCss() {
+        return listCss;
+    }
+
+    public void setListCss(String listCss) {
+        this.listCss = listCss;
+    }
+
+    public String getListHtml() {
+        return listHtml;
+    }
+
+    public void setListHtml(String listHtml) {
+        this.listHtml = listHtml;
+    }
+
+    public String getListTs() {
+        return listTs;
+    }
+
+    public void setListTs(String listTs) {
+        this.listTs = listTs;
+    }
 
     public String getEditTs() {
         return editTs;

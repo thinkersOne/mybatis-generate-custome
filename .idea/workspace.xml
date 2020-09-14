@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/edit.ts.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/edit/rms-vehicle-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/list.css.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/list.html.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/list.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" afterDir="false" />
@@ -222,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600052097754</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit 生成">
+      <created>1600065665064</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1600065665064</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,13 +282,14 @@
     <MESSAGE value="swagger 接口生成" />
     <MESSAGE value="1" />
     <MESSAGE value="edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit" />
+    <MESSAGE value="edit 生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit 生成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600060848024">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600065856000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600060848024" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600065856000" />
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1599660216612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -290,10 +302,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600052095954">
+    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600065663136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600052095954" />
+    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600065663136" />
     <state width="478" height="538" key="DebuggerActiveHint" timestamp="1600051734474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -306,22 +318,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1168" height="336" key="GridCell.Tab.0.bottom" timestamp="1600061408687">
+    <state width="1166" height="351" key="GridCell.Tab.0.bottom" timestamp="1600068811672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1168" height="336" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600061408687" />
-    <state width="1168" height="336" key="GridCell.Tab.0.center" timestamp="1600061408687">
+    <state width="1166" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600068811672" />
+    <state width="1166" height="351" key="GridCell.Tab.0.center" timestamp="1600068811671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1168" height="336" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600061408687" />
-    <state width="1168" height="336" key="GridCell.Tab.0.left" timestamp="1600061408686">
+    <state width="1166" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600068811671" />
+    <state width="1166" height="351" key="GridCell.Tab.0.left" timestamp="1600068811671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1168" height="336" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600061408686" />
-    <state width="1168" height="336" key="GridCell.Tab.0.right" timestamp="1600061408687">
+    <state width="1166" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600068811671" />
+    <state width="1166" height="351" key="GridCell.Tab.0.right" timestamp="1600068811671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1168" height="336" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600061408687" />
+    <state width="1166" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600068811671" />
     <state width="1177" height="399" key="GridCell.Tab.1.bottom" timestamp="1600051825977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -366,10 +378,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="356" y="76" width="843" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599814787283" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600052099634">
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600065667692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600052099634" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600065667692" />
     <state x="262" y="166" key="new project wizard" timestamp="1599726783551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -386,11 +398,6 @@
           <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeFreemarkerTemplateEngine.java</url>
           <line>28</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java</url>
-          <line>185</line>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
