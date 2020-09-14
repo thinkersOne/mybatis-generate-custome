@@ -190,6 +190,13 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                         this.writerFile(objectMap, this.templateFilePath(template.getEditHtml()), controllerFile);
                     }
                 }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("editTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("editTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "-edit.component"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getEditTs()), controllerFile);
+                    }
+                }
             }
         } catch (Exception var11) {
             logger.error("无法创建文件，请检查配置信息！", var11);

@@ -43,6 +43,15 @@ public class CustomeTemplateConfig {
 
     //设置前端 angular 代码
     private String editHtml = "/templates/angular/edit.html";
+    private String editTs = "/templates/angular/edit.ts";
+
+    public String getEditTs() {
+        return editTs;
+    }
+
+    public void setEditTs(String editTs) {
+        this.editTs = editTs;
+    }
 
     public String getEditHtml() {
         return editHtml;

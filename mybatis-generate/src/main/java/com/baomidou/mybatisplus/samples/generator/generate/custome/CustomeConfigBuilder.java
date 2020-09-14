@@ -727,6 +727,7 @@ public class CustomeConfigBuilder{
 
             // 设置 angular 前端
             this.setPathInfo(this.pathInfo,template.getEditHtml(),outputDir,"editHtml_path","EditAngular");
+            this.setPathInfo(this.pathInfo,template.getEditTs(),outputDir,"editTs_path","EditAngular");
 
         }
     }
