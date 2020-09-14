@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Param;
  * </p>
  *
  * @author lizhihao
- * @since 2020-09-11
+ * @since 2020-09-14
  */
 public interface RmsVehicleDaoExt extends BaseDao {
         /**

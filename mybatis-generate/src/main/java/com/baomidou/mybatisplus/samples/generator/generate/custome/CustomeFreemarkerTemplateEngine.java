@@ -28,7 +28,6 @@ public class CustomeFreemarkerTemplateEngine extends CustomeAbstractTemplateEngi
         Template template = this.configuration.getTemplate(templatePath);
         FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
         Throwable var6 = null;
-
         try {
             template.process(objectMap, new OutputStreamWriter(fileOutputStream, ConstVal.UTF8));
         } catch (Throwable var15) {

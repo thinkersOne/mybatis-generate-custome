@@ -2,6 +2,9 @@ package com.baomidou.mybatisplus.samples.generator.generate.custome;
 
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 
+/**
+ * 设置 包路径文件 地址
+ */
 public class CustomePackageConfig extends PackageConfig {
     //包名
     private String daoExt = "daoExt";
@@ -13,6 +16,44 @@ public class CustomePackageConfig extends PackageConfig {
     private String apisModelYaml = "swagger-spec.apis.model";
     private String modelsYaml = "swagger-spec.models";
     private String modelsCommonYaml = "swagger-spec.models.common";
+
+    // angular 前端模块 文件
+    private String editAngular = "angular.edit";
+    private String listAngular = "angular";
+    private String serviceAngular = "angular.service";
+    private String serviceModelAngular = "angular.service.model";
+
+    public String getEditAngular() {
+        return editAngular;
+    }
+
+    public void setEditAngular(String editAngular) {
+        this.editAngular = editAngular;
+    }
+
+    public String getListAngular() {
+        return listAngular;
+    }
+
+    public void setListAngular(String listAngular) {
+        this.listAngular = listAngular;
+    }
+
+    public String getServiceAngular() {
+        return serviceAngular;
+    }
+
+    public void setServiceAngular(String serviceAngular) {
+        this.serviceAngular = serviceAngular;
+    }
+
+    public String getServiceModelAngular() {
+        return serviceModelAngular;
+    }
+
+    public void setServiceModelAngular(String serviceModelAngular) {
+        this.serviceModelAngular = serviceModelAngular;
+    }
 
     public String getModelsCommonYaml() {
         return modelsCommonYaml;

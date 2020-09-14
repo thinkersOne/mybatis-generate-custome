@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.generator.config.TemplateType;
 import java.util.Objects;
 
 public class CustomeTemplateConfig {
+    // 后端代码
     private String entity = "/templates/entity.java";
     private String entityKt = "/templates/entity.kt";
     private String service = "/templates/service.java";
@@ -16,29 +17,40 @@ public class CustomeTemplateConfig {
 
     //设置 swagger yaml文件
     // index.yaml
-    private String index = "/templates/index.yaml";
+    private String index = "/templates/swagger/index.yaml";
     // apis部分
     // common.yaml
-    private String common = "/templates/common.yaml";
+    private String common = "/templates/swagger/common.yaml";
     // exists-code.yaml
-    private String existsCode = "/templates/exists-code.yaml";
+    private String existsCode = "/templates/swagger/exists-code.yaml";
     // exists-name.yaml
-    private String existsName = "/templates/exists-name.yaml";
+    private String existsName = "/templates/swagger/exists-name.yaml";
     // get-model.yaml
-    private String getModel = "/templates/get-model.yaml";
+    private String getModel = "/templates/swagger/get-model.yaml";
     // get-page.yaml
-    private String getPage = "/templates/get-page.yaml";
+    private String getPage = "/templates/swagger/get-page.yaml";
     // get-total.yaml
-    private String getTotal = "/templates/get-total.yaml";
+    private String getTotal = "/templates/swagger/get-total.yaml";
     // save.yaml
-    private String save = "/templates/save.yaml";
+    private String save = "/templates/swagger/save.yaml";
     // update-status.yaml
-    private String updateStatus = "/templates/update-status.yaml";
+    private String updateStatus = "/templates/swagger/update-status.yaml";
     // 设置 api  里面包含所有接口定义
-    private String apis = "/templates/apis.yaml";
+    private String apis = "/templates/swagger/apis.yaml";
     // models 部分
-    private String pageParam = "/templates/page-param.yaml";
-    private String response = "/templates/response.yaml";
+    private String pageParam = "/templates/swagger/page-param.yaml";
+    private String response = "/templates/swagger/response.yaml";
+
+    //设置前端 angular 代码
+    private String editHtml = "/templates/angular/edit.html";
+
+    public String getEditHtml() {
+        return editHtml;
+    }
+
+    public void setEditHtml(String editHtml) {
+        this.editHtml = editHtml;
+    }
 
     public String getPageParam() {
         return pageParam;

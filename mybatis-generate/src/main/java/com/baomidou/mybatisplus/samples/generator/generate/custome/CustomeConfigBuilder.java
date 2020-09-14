@@ -684,6 +684,12 @@ public class CustomeConfigBuilder{
         this.packageInfo.put("ModelsYaml",this.joinPackage(config.getParent(),config.getModelsYaml()));
         this.packageInfo.put("ModelsCommonYaml",this.joinPackage(config.getParent(),config.getModelsCommonYaml()));
 
+        //设置 前端angular 参数
+        this.packageInfo.put("EditAngular",this.joinPackage(config.getParent(),config.getEditAngular()));
+        this.packageInfo.put("ListAngular",this.joinPackage(config.getParent(),config.getListAngular()));
+        this.packageInfo.put("ServiceAngular",this.joinPackage(config.getParent(),config.getServiceAngular()));
+        this.packageInfo.put("ServiceModelAngular",this.joinPackage(config.getParent(),config.getServiceModelAngular()));
+
         // 设置 ftl中的 其他参数
         this.packageInfo.put("limitArgs","#{pageParam.offset},#{pageParam.limit}");
         this.packageInfo.put("pageWhereLike","(`code` like concat(#{queryParam.keyword},'%')\n" +
@@ -718,6 +724,9 @@ public class CustomeConfigBuilder{
             this.setPathInfo(this.pathInfo,template.getUpdateStatus(),outputDir,"updateStatus_path","ApisYaml");
             this.setPathInfo(this.pathInfo,template.getPageParam(),outputDir,"pageParam_path","ModelsCommonYaml");
             this.setPathInfo(this.pathInfo,template.getResponse(),outputDir,"response_path","ModelsYaml");
+
+            // 设置 angular 前端
+            this.setPathInfo(this.pathInfo,template.getEditHtml(),outputDir,"editHtml_path","EditAngular");
 
         }
     }

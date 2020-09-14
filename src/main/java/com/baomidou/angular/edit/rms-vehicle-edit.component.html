@@ -1,0 +1,122 @@
+<div class="modal-header">
+  <div class="modal-title">{{ model.id != null ? '编辑' : '添加' }}</div>
+</div>
+<form nz-form #f="ngForm" (ngSubmit)="saveOnClick()">
+  <div se-container="2">
+             <se label="组织机构id" [id]="'txtSysOrgId'" #seSysOrgId>
+            <input nz-input [(ngModel)]="model.sysOrgId"
+                id="txtSysOrgId" name="sysOrgId" />
+        </se>
+        <se label="车牌号" [id]="'txtLicense'" #seLicense>
+            <input nz-input [(ngModel)]="model.license"
+                id="txtLicense" name="license" />
+        </se>
+        <se label="车队" [id]="'txtRmsMotorcadeId'" #seRmsMotorcadeId>
+            <input nz-input [(ngModel)]="model.rmsMotorcadeId"
+                id="txtRmsMotorcadeId" name="rmsMotorcadeId" />
+        </se>
+        <se label="运输状态" [id]="'txtTaskStatus'" #seTaskStatus>
+            <input nz-input [(ngModel)]="model.taskStatus"
+                id="txtTaskStatus" name="taskStatus" />
+        </se>
+        <se label="车辆类型 0:燃油车 1:新能源" [id]="'txtEnergyType'" #seEnergyType>
+            <input nz-input [(ngModel)]="model.energyType"
+                id="txtEnergyType" name="energyType" />
+        </se>
+        <se label="车辆来源 0:自有车辆 1：社会车辆" [id]="'txtSourceType'" #seSourceType>
+            <input nz-input [(ngModel)]="model.sourceType"
+                id="txtSourceType" name="sourceType" />
+        </se>
+        <se label="状态 0:停用 1:启用" [id]="'txtStatus'" #seStatus>
+            <input nz-input [(ngModel)]="model.status"
+                id="txtStatus" name="status" />
+        </se>
+        <se label="0:未授权 1：已授权" [id]="'txtAuthStatus'" #seAuthStatus>
+            <input nz-input [(ngModel)]="model.authStatus"
+                id="txtAuthStatus" name="authStatus" />
+        </se>
+        <se label="车型" [id]="'txtVehicleTypeId'" #seVehicleTypeId>
+            <input nz-input [(ngModel)]="model.vehicleTypeId"
+                id="txtVehicleTypeId" name="vehicleTypeId" />
+        </se>
+        <se label="车长(m)" [id]="'txtLength'" #seLength>
+            <input nz-input [(ngModel)]="model.length"
+                id="txtLength" name="length" />
+        </se>
+        <se label="车宽(m)" [id]="'txtWidth'" #seWidth>
+            <input nz-input [(ngModel)]="model.width"
+                id="txtWidth" name="width" />
+        </se>
+        <se label="车高(m)" [id]="'txtHeight'" #seHeight>
+            <input nz-input [(ngModel)]="model.height"
+                id="txtHeight" name="height" />
+        </se>
+        <se label="载重(kg)" [id]="'txtRatedLoad'" #seRatedLoad>
+            <input nz-input [(ngModel)]="model.ratedLoad"
+                id="txtRatedLoad" name="ratedLoad" />
+        </se>
+        <se label="体积(m3)" [id]="'txtRatedVolume'" #seRatedVolume>
+            <input nz-input [(ngModel)]="model.ratedVolume"
+                id="txtRatedVolume" name="ratedVolume" />
+        </se>
+        <se label="车辆品牌(新能源车)" [id]="'txtVehicleBrandId'" #seVehicleBrandId>
+            <input nz-input [(ngModel)]="model.vehicleBrandId"
+                id="txtVehicleBrandId" name="vehicleBrandId" />
+        </se>
+        <se label="创建人" [id]="'txtCreateUser'" #seCreateUser>
+            <input nz-input [(ngModel)]="model.createUser"
+                id="txtCreateUser" name="createUser" />
+        </se>
+        <se label="修改人" [id]="'txtUpdateUser'" #seUpdateUser>
+            <input nz-input [(ngModel)]="model.updateUser"
+                id="txtUpdateUser" name="updateUser" />
+        </se>
+        <se label="创建日期" [id]="'txtCreateTime'" #seCreateTime>
+            <input nz-input [(ngModel)]="model.createTime"
+                id="txtCreateTime" name="createTime" />
+        </se>
+        <se label="修改日期" [id]="'txtUpdateTime'" #seUpdateTime>
+            <input nz-input [(ngModel)]="model.updateTime"
+                id="txtUpdateTime" name="updateTime" />
+        </se>
+        <se label="租户" [id]="'txtTenantId'" #seTenantId>
+            <input nz-input [(ngModel)]="model.tenantId"
+                id="txtTenantId" name="tenantId" />
+        </se>
+        <se label="道路运输证号" [id]="'txtRoadTransportNum'" #seRoadTransportNum>
+            <input nz-input [(ngModel)]="model.roadTransportNum"
+                id="txtRoadTransportNum" name="roadTransportNum" />
+        </se>
+        <se label="续航里程(新能源车)" [id]="'txtEnduranceMileage'" #seEnduranceMileage>
+            <input nz-input [(ngModel)]="model.enduranceMileage"
+                id="txtEnduranceMileage" name="enduranceMileage" />
+        </se>
+        <se label="拼音" [id]="'txtPinYin'" #sePinYin>
+            <input nz-input [(ngModel)]="model.pinYin"
+                id="txtPinYin" name="pinYin" />
+        </se>
+        <se label="" [id]="'txtRemark'" #seRemark>
+            <input nz-input [(ngModel)]="model.remark"
+                id="txtRemark"
+                   name="remark" />
+        </se>
+        <se label="车厢类型" [id]="'txtCarriageTypeId'" #seCarriageTypeId>
+            <input nz-input [(ngModel)]="model.carriageTypeId"
+                id="txtCarriageTypeId" name="carriageTypeId" />
+        </se>
+        <se label="所属公司" [id]="'txtCompanyId'" #seCompanyId>
+            <input nz-input [(ngModel)]="model.companyId"
+                id="txtCompanyId" name="companyId" />
+        </se>
+        <se label="1:TMS 2:云调度 3:云驹宝" [id]="'txtSysAppId'" #seSysAppId>
+            <input nz-input [(ngModel)]="model.sysAppId"
+                id="txtSysAppId" name="sysAppId" />
+        </se>
+  </div>
+  <div class="modal-footer">
+    <button nz-button type="button" (click)="closeOnClick()" id="btnClose">关闭</button>
+    <button nz-button nzType="primary" [disabled]="f.invalid" id="btnSave" [nzLoading]="http.loading">
+      保存
+    </button>
+  </div>
+</form>
