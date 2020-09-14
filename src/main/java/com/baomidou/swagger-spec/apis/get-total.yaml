@@ -1,14 +1,14 @@
 swagger: 2.0
 definitions:
-  RmsDriverGetTotalRequest:
+  RmsVehicleGetTotalRequest:
     description:
     type: object
     properties:
       queryParam:
         description: 查询参数
         type: object
-        $ref: './common.yaml#/definitions/RmsDriverGetPageParam'
-  RmsDriverGetTotalResponse:
+        $ref: './common.yaml#/definitions/RmsVehicleGetPageParam'
+  RmsVehicleGetTotalResponse:
     description:
     type: object
     properties:

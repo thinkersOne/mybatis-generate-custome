@@ -1,6 +1,6 @@
 swagger: 2.0
 definitions:
-  RmsDriverUpdateStatusRequest:
+  RmsVehicleUpdateStatusRequest:
     description:
     type: object
     properties:
@@ -11,7 +11,7 @@ definitions:
       status:
         description: 1:启用 0：停用
         type: integer
-  RmsDriverUpdateStatusResponse:
+  RmsVehicleUpdateStatusResponse:
     description:
     type: object
     properties:

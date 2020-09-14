@@ -1,6 +1,6 @@
 swagger: 2.0
 definitions:
-  RmsDriverExistsNameRequest:
+  RmsVehicleExistsNameRequest:
     description:
     type: object
     properties:
@@ -11,7 +11,7 @@ definitions:
       name:
         description: 名称
         type: string
-  RmsDriverExistsNameResponse:
+  RmsVehicleExistsNameResponse:
     description:
     type: object
     properties:

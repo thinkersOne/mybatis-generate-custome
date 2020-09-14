@@ -1,31 +1,31 @@
 package com.baomidou.service;
 
-import com.baomidou.entity.RmsDriverEntity;
+import com.baomidou.entity.RmsVehicleEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
 
 /**
  * <p>
- * 司机 服务类
+ * 车辆 服务类
  * </p>
  *
  * @author lizhihao
  * @since 2020-09-11
  */
 @Service
-public class RmsDriverService{
+public class RmsVehicleService{
    //列表查询
-   public RmsDriverGetPageResponse getPage(RmsDriverGetPageRequest request) {
-       RmsDriverGetPageResponse response = new RmsDriverGetPageResponse();
-        List<RmsDriverEntity> list = daoExt.getPage(SqlPageParam.create(request.getPageParam()), request.getQueryParam());
-       List<RmsDriverGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
+   public RmsVehicleGetPageResponse getPage(RmsVehicleGetPageRequest request) {
+       RmsVehicleGetPageResponse response = new RmsVehicleGetPageResponse();
+        List<RmsVehicleEntity> list = daoExt.getPage(SqlPageParam.create(request.getPageParam()), request.getQueryParam());
+       List<RmsVehicleGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
        response.setData(data);
        response.setCode(Response.OK);
        return response;
    }
    //获取总数
-   public RmsDriverGetTotalResponse getTotal(@RequestBody RmsDriverGetTotalRequest request) {
-       RmsDriverGetTotalResponse response = new RmsDriverGetTotalResponse();
+   public RmsVehicleGetTotalResponse getTotal(@RequestBody RmsVehicleGetTotalRequest request) {
+       RmsVehicleGetTotalResponse response = new RmsVehicleGetTotalResponse();
        long total = daoExt.getCount(request.getQueryParam());
        response.setTotal(total);
        response.setCode(Response.OK);
@@ -38,28 +38,28 @@ public class RmsDriverService{
         * @param request
         * @return
         */
-       public RmsDriverSaveResponse save(RmsDriverSaveRequest request, AdminSessionInfo sessionInfo) {
-           RmsDriverSaveResponse response = this.check(request);
+       public RmsVehicleSaveResponse save(RmsVehicleSaveRequest request, AdminSessionInfo sessionInfo) {
+           RmsVehicleSaveResponse response = this.check(request);
            if (response.getCode() < 1) {
                return response;
            }
            OpLogWriter opLogWriter = this.logService.newOpLogWriter(sessionInfo.getSysUserName());
-           RmsDriverEntity entity = null;
+           RmsVehicleEntity entity = null;
            if (request.getModel().getId() != null && request.getModel().getId() > 0) {
            entity = dao.selectByPrimaryKey(request.getModel().getId());
            opLogWriter.setOldEntity(entity);
            }
-           entity = loadRmsDriverEntity(request.getModel(),entity, sessionInfo);
+           entity = loadRmsVehicleEntity(request.getModel(),entity, sessionInfo);
            Map<String, Object> mapNew = ToMapUtil.toMap(entity);
            if (entity.getId() == null) {
            //新增
            entity.setId(this.generator.nextId());
            dao.insertSelective(entity);
-           opLogWriter.setOperationType(EnumOperationType.RmsDriverServiceAdd);
+           opLogWriter.setOperationType(EnumOperationType.RmsVehicleServiceAdd);
            } else {
            //更新
            dao.updateByPrimaryKeySelective(entity);
-           opLogWriter.setOperationType(EnumOperationType.RmsDriverServiceUpdate);
+           opLogWriter.setOperationType(EnumOperationType.RmsVehicleServiceUpdate);
 
            }
            opLogWriter.setNewEntity(entity)
@@ -71,10 +71,10 @@ public class RmsDriverService{
     /**
     * 保存
     */
-    public RmsDriverEntity loadRmsDriverEntity(RmsDriverSaveModel saveModel,
-    RmsDriverEntity entity,AdminSessionInfo sessionInfo){
+    public RmsVehicleEntity loadRmsVehicleEntity(RmsVehicleSaveModel saveModel,
+    RmsVehicleEntity entity,AdminSessionInfo sessionInfo){
             if (entity == null) {
-                entity = new RmsDriverEntity();
+                entity = new RmsVehicleEntity();
                 entity.setTenantId(sessionInfo.getCurrentTenantId());
                 entity.setCreateUser(sessionInfo.getSysUserName());
                 entity.setCreateTime(new Date());
@@ -94,40 +94,40 @@ public class RmsDriverService{
             return  entity;
     }
     // check
-    public RmsDriverSaveResponse check(RmsDriverSaveRequest request) {
-        RmsDriverSaveResponse response = new RmsDriverSaveResponse();
-        EnumRmsDriverErrorCode error = EnumRmsDriverErrorCode.OK;
+    public RmsVehicleSaveResponse check(RmsVehicleSaveRequest request) {
+        RmsVehicleSaveResponse response = new RmsVehicleSaveResponse();
+        EnumRmsVehicleErrorCode error = EnumRmsVehicleErrorCode.OK;
         if (request == null || request.getModel() == null) {
-            error = EnumRmsDriverErrorCode.NOT_NULL;
+            error = EnumRmsVehicleErrorCode.NOT_NULL;
         }
-        RmsDriverSaveModel model = request.getModel();
+        RmsVehicleSaveModel model = request.getModel();
         response.setCode(error.getCode());
         response.setMessage(error.getMessage());
         return response;
     }
     // 获取详情
-    public RmsDriverGetModelResponse getModel(RmsDriverGetModelRequest request) {
-            RmsDriverGetModelResponse response = new RmsDriverGetModelResponse();
-            RmsDriverEntity entity = dao.selectByPrimaryKey(request.getId());
-            RmsDriverSaveModel saveModel = new RmsDriverSaveModel();
+    public RmsVehicleGetModelResponse getModel(RmsVehicleGetModelRequest request) {
+            RmsVehicleGetModelResponse response = new RmsVehicleGetModelResponse();
+            RmsVehicleEntity entity = dao.selectByPrimaryKey(request.getId());
+            RmsVehicleSaveModel saveModel = new RmsVehicleSaveModel();
             saveModel.setBalanceAmount(entity.getBalanceAmount());
             saveModel.setCardNo(entity.getCardNo());
             saveModel.setCarrierType(entity.getCarrierType());
             saveModel.setDriverId(entity.getDriverId());
             saveModel.setId(entity.getId());
             saveModel.setOilCardType(entity.getOilCardType());
-            saveModel.setOilCardTypeName(EnumRmsDriverType.getText(entity.getOilCardType()));
+            saveModel.setOilCardTypeName(EnumRmsVehicleType.getText(entity.getOilCardType()));
             saveModel.setOperationMode(entity.getOperationMode());
-            saveModel.setOperationModeName(EnumRmsDriverOperationMode.getText(entity.getOperationMode()));
+            saveModel.setOperationModeName(EnumRmsVehicleOperationMode.getText(entity.getOperationMode()));
             saveModel.setRemark(entity.getRemark());
             saveModel.setRmsMotorcadeId(entity.getRmsMotorcadeId());
             saveModel.setSellerCompanyId(entity.getSellerCompanyId());
             saveModel.setStatus(entity.getStatus());
-            saveModel.setStatusName(EnumRmsDriverStatus.getText(entity.getStatus()));
+            saveModel.setStatusName(EnumRmsVehicleStatus.getText(entity.getStatus()));
             saveModel.setLossStatus(entity.getLossStatus());
-            saveModel.setLossStatusName(EnumRmsDriverLossStatus.getText(entity.getLossStatus()));
+            saveModel.setLossStatusName(EnumRmsVehicleLossStatus.getText(entity.getLossStatus()));
             saveModel.setAllocationStatus(entity.getAllocationStatus());
-            saveModel.setAllocationStatusName(EnumRmsDriverAllocationStatus.getText(entity.getAllocationStatus()));
+            saveModel.setAllocationStatusName(EnumRmsVehicleAllocationStatus.getText(entity.getAllocationStatus()));
             saveModel.setVehicleLicense(entity.getVehicleLicense());
             saveModel.setRmsVehicleId(entity.getRmsVehicleId());
             saveModel.setSupplierId(entity.getSupplierId());
@@ -169,15 +169,15 @@ public class RmsDriverService{
             return info;
     }
     // 导出
-    public ExcelFileInfo<RmsDriverGetPageModel> getExportMeta(String fileName, List<RmsDriverGetPageModel> dataSource) {
-        ExcelFileInfo<RmsDriverGetPageModel> info = getImportMeta();
+    public ExcelFileInfo<RmsVehicleGetPageModel> getExportMeta(String fileName, List<RmsVehicleGetPageModel> dataSource) {
+        ExcelFileInfo<RmsVehicleGetPageModel> info = getImportMeta();
         info.setDataSource(dataSource);
         info.setFileName(fileName);
         return info;
     }
     // 列表转化
-    private RmsDriverGetPageModel toPageModel(RmsDriverEntity entity) {
-            RmsDriveretPageModel model = new RmsDriverGetPageModel();
+    private RmsVehicleGetPageModel toPageModel(RmsVehicleEntity entity) {
+            RmsVehicleetPageModel model = new RmsVehicleGetPageModel();
 
             model.setBalanceAmount(entity.getBalanceAmount());
 
@@ -232,18 +232,18 @@ public class RmsDriverService{
             return model;
      }
     // 获取导出数据
-    public List<RmsDriverGetPageModel> getExportDataSource(RmsDriverGetPageParam pageParam) {
-        List<RmsDriverEntity> list = daoExt.getByWhere(pageParam);
-        List<RmsDriverGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
+    public List<RmsVehicleGetPageModel> getExportDataSource(RmsVehicleGetPageParam pageParam) {
+        List<RmsVehicleEntity> list = daoExt.getByWhere(pageParam);
+        List<RmsVehicleGetPageModel> data = list.stream().map(this::toPageModel).collect(Collectors.toList());
         setOtherInfo(data);
         return data;
     }
 
     // 更新状态
-    public RmsDriverUpdateStatusResponse updateStatus(RmsDriverUpdateStatusRequest request) {
-        RmsDriverUpdateStatusResponse response = new RmsDriverUpdateStatusResponse();
+    public RmsVehicleUpdateStatusResponse updateStatus(RmsVehicleUpdateStatusRequest request) {
+        RmsVehicleUpdateStatusResponse response = new RmsVehicleUpdateStatusResponse();
         response.setCode(Response.OK);
-        RmsDriverEntity entity = new RmsDriverEntity();
+        RmsVehicleEntity entity = new RmsVehicleEntity();
         entity.setStatus(request.getStatus());
         entity.setId(request.getId());
         dao.updateByPrimaryKeySelective(entity);

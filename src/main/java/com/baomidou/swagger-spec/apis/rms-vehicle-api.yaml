@@ -1,6 +1,6 @@
 swagger: 2.0
 paths:
-  getPage: #/rmsDriver/getPage:
+  getPage: #/rmsVehicle/getPage:
     post:
       summary:
       operationId: getPage
@@ -10,15 +10,15 @@ paths:
           required: true
           description:
           schema:
-            $ref: '../apis/rms-driver/model/get-page.yaml#/definitions/RmsDriverGetPageRequest'
+            $ref: '../apis/rms-vehicle/model/get-page.yaml#/definitions/RmsVehicleGetPageRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/get-page.yaml#/definitions/RmsDriverGetPageResponse'
+            $ref: '../apis/rms-vehicle/model/get-page.yaml#/definitions/RmsVehicleGetPageResponse'
       tags:
-        - RmsDriver
-  getTotal: #/rmsDriver/getTotal:
+        - RmsVehicle
+  getTotal: #/rmsVehicle/getTotal:
     post:
       summary:
       operationId: getTotal
@@ -28,15 +28,15 @@ paths:
         required: true
         description:
         schema:
-          $ref: '../apis/rms-driver/model/get-total.yaml#/definitions/RmsDriverGetTotalRequest'
+          $ref: '../apis/rms-vehicle/model/get-total.yaml#/definitions/RmsVehicleGetTotalRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/get-total.yaml#/definitions/RmsDriverGetTotalResponse'
+            $ref: '../apis/rms-vehicle/model/get-total.yaml#/definitions/RmsVehicleGetTotalResponse'
       tags:
-      - RmsDriver
-  save: #/rmsDriver/save:
+      - RmsVehicle
+  save: #/rmsVehicle/save:
     post:
       summary:
       operationId: save
@@ -46,15 +46,15 @@ paths:
         required: true
         description:
         schema:
-          $ref: '../apis/rms-driver/model/save.yaml#/definitions/RmsDriverSaveRequest'
+          $ref: '../apis/rms-vehicle/model/save.yaml#/definitions/RmsVehicleSaveRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/save.yaml#/definitions/RmsDriverSaveResponse'
+            $ref: '../apis/rms-vehicle/model/save.yaml#/definitions/RmsVehicleSaveResponse'
       tags:
-      - RmsDriver
-  getModel: #/rmsDriver/getModel:
+      - RmsVehicle
+  getModel: #/rmsVehicle/getModel:
     post:
       summary:
       operationId: getModel
@@ -64,15 +64,15 @@ paths:
         required: true
         description:
         schema:
-          $ref: '../apis/rms-driver/model/get-model.yaml#/definitions/RmsDriverGetModelRequest'
+          $ref: '../apis/rms-vehicle/model/get-model.yaml#/definitions/RmsVehicleGetModelRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/get-model.yaml#/definitions/RmsDriverGetModelResponse'
+            $ref: '../apis/rms-vehicle/model/get-model.yaml#/definitions/RmsVehicleGetModelResponse'
       tags:
-      - RmsDriver
-  existsName: #/rmsDriver/existsName:
+      - RmsVehicle
+  existsName: #/rmsVehicle/existsName:
     post:
       summary:
       operationId: existsName
@@ -82,15 +82,15 @@ paths:
         required: true
         description:
         schema:
-          $ref: '../apis/rms-driver/model/exists-name.yaml#/definitions/RmsDriverExistsNameRequest'
+          $ref: '../apis/rms-vehicle/model/exists-name.yaml#/definitions/RmsVehicleExistsNameRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/exists-name.yaml#/definitions/RmsDriverExistsNameResponse'
+            $ref: '../apis/rms-vehicle/model/exists-name.yaml#/definitions/RmsVehicleExistsNameResponse'
       tags:
-      - RmsDriver
-  existsCode: #/rmsDriver/existsCode:
+      - RmsVehicle
+  existsCode: #/rmsVehicle/existsCode:
     post:
       summary:
       operationId: existsCode
@@ -100,15 +100,15 @@ paths:
         required: true
         description:
         schema:
-          $ref: '../apis/rms-driver/model/exists-code.yaml#/definitions/RmsDriverExistsCodeRequest'
+          $ref: '../apis/rms-vehicle/model/exists-code.yaml#/definitions/RmsVehicleExistsCodeRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/exists-code.yaml#/definitions/RmsDriverExistsCodeResponse'
+            $ref: '../apis/rms-vehicle/model/exists-code.yaml#/definitions/RmsVehicleExistsCodeResponse'
       tags:
-      - RmsDriver
-  importExcel: #/rmsDriver/importExcel
+      - RmsVehicle
+  importExcel: #/rmsVehicle/importExcel
     post:
       summary: 导入
       operationId: importExcel
@@ -126,8 +126,8 @@ paths:
           schema:
             $ref: '../models/response.yaml#/definitions/Response'
       tags:
-      - RmsDriver
-  exportExcel: #/rmsDriver/exportExcel
+      - RmsVehicle
+  exportExcel: #/rmsVehicle/exportExcel
     post:
       summary: 导出
       operationId: exportExcel
@@ -140,16 +140,16 @@ paths:
         required: true
         description: 参数
       tags:
-      - RmsDriver
-  downloadTemplate: #/rmsDriver/downloadTemplate
+      - RmsVehicle
+  downloadTemplate: #/rmsVehicle/downloadTemplate
     post:
       summary: 导出
       operationId: downloadTemplate
       consumes:
         - application/x-www-form-urlencoded
       tags:
-        - RmsDriver
-  updateStatus: #/rmsDriver/updateStatus:
+        - RmsVehicle
+  updateStatus: #/rmsVehicle/updateStatus:
     post:
       summary:
       operationId: updateStatus
@@ -159,11 +159,11 @@ paths:
         required: true
         description:
         schema:
-          $ref: '../apis/rms-driver/model/update-status.yaml#/definitions/RmsDriverUpdateStatusRequest'
+          $ref: '../apis/rms-vehicle/model/update-status.yaml#/definitions/RmsVehicleUpdateStatusRequest'
       responses:
         '200':
           description:
           schema:
-            $ref: '../apis/rms-driver/model/update-status.yaml#/definitions/RmsDriverUpdateStatusResponse'
+            $ref: '../apis/rms-vehicle/model/update-status.yaml#/definitions/RmsVehicleUpdateStatusResponse'
       tags:
-      - RmsDriver
+      - RmsVehicle

@@ -1,100 +1,76 @@
 swagger: 2.0
 definitions:
-  RmsDriverGetPageParam:
+  RmsVehicleGetPageParam:
     description:
     type: object
     properties:
       keyword:
         description: 名称 编码
         type: string
-  RmsDriverSaveModel:
+  RmsVehicleSaveModel:
     description:
     type: object
     properties:
       sysOrgId:
-        description: 所属组织机构
+        description: 组织机构id
         type: integer
         format: int64
+      license:
+        description: 车牌号
+        type: string
+        format:
       rmsMotorcadeId:
         description: 车队
         type: integer
         format: int64
-      name:
-        description: 名称
-        type: string
-        format:
-      code:
-        description: 编码
-        type: string
-        format:
-      iphone:
-        description: 电话
-        type: string
-        format:
-      age:
-        description: 年龄
+      taskStatus:
+        description: 运输状态
         type: integer
         format:
-      baseWages:
-        description: 基本工资
-        type: number
-        format: double
-      birthday:
-        description: 生日
-        type: string
-        format: date
-      identityCard:
-        description: 身份证
-        type: string
-        format:
-      licenseDate:
-        description: 驾驶证领取时间
-        type: string
-        format: date
-      bankAccount:
-        description: 银行账号
-        type: string
-        format:
-      bankName:
-        description: 开户行名称
-        type: string
-        format:
-      iphone2:
-        description: 电话1
-        type: string
-        format:
-      sex:
-        description: 性别 0:女  1:男
-        type: string
-        format:
-      driverType:
-        description: 司机类型 0:自营 1:长期外请 2.临时外请
+      energyType:
+        description: 车辆类型 0:燃油车 1:新能源
         type: integer
-        format:
-      taskDistance:
-        description: 任务时长
-        type: number
-        format: double
-      taskCount:
-        description: 任务总数
-        type: integer
-        format:
-      taskDoneCount:
-        description: 任务完成数
-        type: integer
-        format:
+        format: int64
       sourceType:
-        description: 0:本公司 1：承运商
+        description: 车辆来源 0:自有车辆 1：社会车辆
         type: integer
-        format:
+        format: int64
       status:
-        description: 状态|1：启用 0：禁用
+        description: 状态 0:停用 1:启用
         type: integer
         format:
-      remark:
-        description: 备注
-        type: string
+      authStatus:
+        description: 0:未授权 1：已授权
+        type: integer
         format:
+      vehicleTypeId:
+        description: 车型
+        type: integer
+        format: int64
+      length:
+        description: 车长(m)
+        type: number
+        format: double
+      width:
+        description: 车宽(m)
+        type: number
+        format: double
+      height:
+        description: 车高(m)
+        type: number
+        format: double
+      ratedLoad:
+        description: 载重(kg)
+        type: number
+        format: double
+      ratedVolume:
+        description: 体积(m3)
+        type: number
+        format: double
+      vehicleBrandId:
+        description: 车辆品牌(新能源车)
+        type: integer
+        format: int64
       createUser:
         description: 创建人
         type: string
@@ -111,43 +87,31 @@ definitions:
         description: 租户
         type: integer
         format: int64
+      roadTransportNum:
+        description: 道路运输证号
+        type: string
+        format:
+      enduranceMileage:
+        description: 续航里程(新能源车)
+        type: number
+        format: double
       pinYin:
         description: 拼音
         type: string
         format:
+      remark:
+        description: 
+        type: string
+        format:
+      carriageTypeId:
+        description: 车厢类型
+        type: integer
+        format: int64
+      companyId:
+        description: 所属公司
+        type: integer
+        format: int64
       sysAppId:
         description: 1:TMS 2:云调度 3:云驹宝
         type: integer
         format: int64
-      lastCompleteTime:
-        description: 最后完成时间
-        type: string
-        format: date
-      taskStatus:
-        description: 任务状态  1:执行中 0:空闲中
-        type: integer
-        format:
-      lastTransportPointName:
-        description: 最后完成地点
-        type: string
-        format:
-      licenseCard:
-        description: 驾驶证号
-        type: string
-        format:
-      licenseModel:
-        description: 准驾车型
-        type: string
-        format:
-      licenseValidPeriod:
-        description: 驾驶证有效期限(截止日期)
-        type: string
-        format: date
-      identityValidPeriod:
-        description: 身份证有效期(截止日期)
-        type: string
-        format: date
-      auditStatus:
-        description: 审核状态 0：未审核 1：已审核
-        type: integer
-        format:

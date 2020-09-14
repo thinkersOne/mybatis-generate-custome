@@ -29,33 +29,33 @@ security:
 - X-Access-Token: []
 - X-Operation-Token: []
 paths:
-  #################司机###############
+  #################车辆###############
   # 获取当前页
-  rmsDriver/getPage:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/getPage'
+  rmsVehicle/getPage:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/getPage'
   # 获取总数
-  rmsDriver/getTotal:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/getTotal'
+  rmsVehicle/getTotal:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/getTotal'
   # 保存
-  rmsDriver/save:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/save'
+  rmsVehicle/save:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/save'
   # 名称是否存在
-  rmsDriver/existsName:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/existsName'
+  rmsVehicle/existsName:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/existsName'
   # 编码是否存在
-  rmsDriver/existsCode:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/existsCode'
+  rmsVehicle/existsCode:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/existsCode'
   # 获取保存模型
-  rmsDriver/getModel:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/getModel'
+  rmsVehicle/getModel:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/getModel'
   # 导入
-  rmsDriver/importExcel:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/importExcel'
+  rmsVehicle/importExcel:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/importExcel'
     # 导出
-  rmsDriver/exportExcel:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/exportExcel'
-  rmsDriver/downloadTemplate:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/downloadTemplate'
+  rmsVehicle/exportExcel:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/exportExcel'
+  rmsVehicle/downloadTemplate:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/downloadTemplate'
   #更新状态
-  rmsDriver/updateStatus:
-    $ref: '../apis/rms-driver/rms-driver-api.yaml#/paths/updateStatus'
+  rmsVehicle/updateStatus:
+    $ref: '../apis/rms-vehicle/rms-vehicle-api.yaml#/paths/updateStatus'

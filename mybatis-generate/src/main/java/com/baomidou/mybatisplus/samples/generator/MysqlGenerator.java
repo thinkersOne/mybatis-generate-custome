@@ -100,7 +100,7 @@ public class MysqlGenerator {
         generateModel.setOutputDir(projectPath + "/src/main/java");
         generateModel.setAuthor("lizhihao");
         generateModel.setModuleName("rms");
-        generateModel.setTableNames("rms_driver");
+        generateModel.setTableNames("rms_vehicle");
         generate(generateModel);
     }
 

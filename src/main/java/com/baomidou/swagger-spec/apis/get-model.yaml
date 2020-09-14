@@ -1,6 +1,6 @@
 swagger: 2.0
 definitions:
-  RmsDriverGetModelRequest:
+  RmsVehicleGetModelRequest:
     description:
     type: object
     properties:
@@ -8,7 +8,7 @@ definitions:
         description: id
         type: integer
         format: int64
-  RmsDriverGetModelResponse:
+  RmsVehicleGetModelResponse:
     description:
     type: object
     properties:
@@ -21,4 +21,4 @@ definitions:
       data:
         description: 保存数据模型
         type: object
-        $ref: './common.yaml#/definitions/RmsDriverSaveModel'
+        $ref: './common.yaml#/definitions/RmsVehicleSaveModel'
