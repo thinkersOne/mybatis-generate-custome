@@ -218,7 +218,132 @@ public class CustomeAbstractTemplateEngine extends AbstractTemplateEngine {
                         this.writerFile(objectMap, this.templateFilePath(template.getListTs()), controllerFile);
                     }
                 }
-
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("serviceTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("serviceTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + ".service"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getServiceTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("existsCodeReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("existsCodeReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "ExistsCodeRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getExistsCodeReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("existsCodeResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("existsCodeResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "ExistsCodeResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getExistsCodeResTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("existsNameReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("existsNameReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "ExistsNameRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getExistsNameReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("existsNameResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("existsNameResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "ExistsNameResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getExistsNameResTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getModelReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getModelReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetModelRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetModelReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getModelResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getModelResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetModelResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetModelResTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getPageReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getPageReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetPageRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetPageReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getPageResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getPageResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetPageResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetPageResTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getPageModelTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getPageModelTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetPageModel"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetPageModelTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getPageParamTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getPageParamTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetPageParam"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetPageParamTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getTotalReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getTotalReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetTotalRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetTotalReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("getTotalResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("getTotalResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "GetTotalResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getGetTotalResTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("saveModelTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("saveModelTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "SaveModel"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getSaveModelTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("saveReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("saveReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "SaveRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getSaveReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("saveResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("saveResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "SaveResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getSaveResTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("updateStatusReqTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("updateStatusReqTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "UpdateStatusRequest"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getUpdateStatusReqTs()), controllerFile);
+                    }
+                }
+                if (null != tableInfo.getControllerName() && null != pathInfo.get("updateStatusResTs_path")) {
+                    controllerFile = String.format((String)pathInfo.get("updateStatusResTs_path") + File.separator
+                            + StringUtil.getMiddleLineName(tableInfo.getName()) + "UpdateStatusResponse"  + ".ts", entityName);
+                    if (this.isCreate(FileType.OTHER, controllerFile)) {
+                        this.writerFile(objectMap, this.templateFilePath(template.getUpdateStatusResTs()), controllerFile);
+                    }
+                }
             }
         } catch (Exception var11) {
             logger.error("无法创建文件，请检查配置信息！", var11);

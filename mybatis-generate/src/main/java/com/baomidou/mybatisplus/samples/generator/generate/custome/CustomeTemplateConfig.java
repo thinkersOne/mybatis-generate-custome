@@ -47,6 +47,168 @@ public class CustomeTemplateConfig {
     private String listCss = "/templates/angular/list.css";
     private String listHtml = "/templates/angular/list.html";
     private String listTs = "/templates/angular/list.ts";
+    private String serviceTs = "/templates/angular/service.ts";
+    private String existsCodeReqTs = "/templates/angular/model/existsCodeReq.ts";
+    private String existsCodeResTs = "/templates/angular/model/existsCodeRes.ts";
+    private String existsNameReqTs = "/templates/angular/model/existsNameReq.ts";
+    private String existsNameResTs = "/templates/angular/model/existsNameRes.ts";
+    private String getModelReqTs = "/templates/angular/model/getModelReq.ts";
+    private String getModelResTs = "/templates/angular/model/getModelRes.ts";
+    private String getPageReqTs = "/templates/angular/model/getPageReq.ts";
+    private String getPageResTs = "/templates/angular/model/getPageRes.ts";
+    private String getPageModelTs = "/templates/angular/model/getPageModel.ts";
+    private String getPageParamTs = "/templates/angular/model/getPageParam.ts";
+    private String getTotalReqTs = "/templates/angular/model/getTotalReq.ts";
+    private String getTotalResTs = "/templates/angular/model/getTotalRes.ts";
+    private String saveModelTs = "/templates/angular/model/saveModel.ts";
+    private String saveReqTs = "/templates/angular/model/saveReq.ts";
+    private String saveResTs = "/templates/angular/model/saveRes.ts";
+    private String updateStatusReqTs = "/templates/angular/model/updateStatusReq.ts";
+    private String updateStatusResTs = "/templates/angular/model/updateStatusRes.ts";
+
+    public String getExistsCodeReqTs() {
+        return existsCodeReqTs;
+    }
+
+    public void setExistsCodeReqTs(String existsCodeReqTs) {
+        this.existsCodeReqTs = existsCodeReqTs;
+    }
+
+    public String getExistsCodeResTs() {
+        return existsCodeResTs;
+    }
+
+    public void setExistsCodeResTs(String existsCodeResTs) {
+        this.existsCodeResTs = existsCodeResTs;
+    }
+
+    public String getExistsNameReqTs() {
+        return existsNameReqTs;
+    }
+
+    public void setExistsNameReqTs(String existsNameReqTs) {
+        this.existsNameReqTs = existsNameReqTs;
+    }
+
+    public String getExistsNameResTs() {
+        return existsNameResTs;
+    }
+
+    public void setExistsNameResTs(String existsNameResTs) {
+        this.existsNameResTs = existsNameResTs;
+    }
+
+    public String getGetModelReqTs() {
+        return getModelReqTs;
+    }
+
+    public void setGetModelReqTs(String getModelReqTs) {
+        this.getModelReqTs = getModelReqTs;
+    }
+
+    public String getGetModelResTs() {
+        return getModelResTs;
+    }
+
+    public void setGetModelResTs(String getModelResTs) {
+        this.getModelResTs = getModelResTs;
+    }
+
+    public String getGetPageReqTs() {
+        return getPageReqTs;
+    }
+
+    public void setGetPageReqTs(String getPageReqTs) {
+        this.getPageReqTs = getPageReqTs;
+    }
+
+    public String getGetPageResTs() {
+        return getPageResTs;
+    }
+
+    public void setGetPageResTs(String getPageResTs) {
+        this.getPageResTs = getPageResTs;
+    }
+
+    public String getGetPageModelTs() {
+        return getPageModelTs;
+    }
+
+    public void setGetPageModelTs(String getPageModelTs) {
+        this.getPageModelTs = getPageModelTs;
+    }
+
+    public String getGetPageParamTs() {
+        return getPageParamTs;
+    }
+
+    public void setGetPageParamTs(String getPageParamTs) {
+        this.getPageParamTs = getPageParamTs;
+    }
+
+    public String getGetTotalReqTs() {
+        return getTotalReqTs;
+    }
+
+    public void setGetTotalReqTs(String getTotalReqTs) {
+        this.getTotalReqTs = getTotalReqTs;
+    }
+
+    public String getGetTotalResTs() {
+        return getTotalResTs;
+    }
+
+    public void setGetTotalResTs(String getTotalResTs) {
+        this.getTotalResTs = getTotalResTs;
+    }
+
+    public String getSaveModelTs() {
+        return saveModelTs;
+    }
+
+    public void setSaveModelTs(String saveModelTs) {
+        this.saveModelTs = saveModelTs;
+    }
+
+    public String getSaveReqTs() {
+        return saveReqTs;
+    }
+
+    public void setSaveReqTs(String saveReqTs) {
+        this.saveReqTs = saveReqTs;
+    }
+
+    public String getSaveResTs() {
+        return saveResTs;
+    }
+
+    public void setSaveResTs(String saveResTs) {
+        this.saveResTs = saveResTs;
+    }
+
+    public String getUpdateStatusReqTs() {
+        return updateStatusReqTs;
+    }
+
+    public void setUpdateStatusReqTs(String updateStatusReqTs) {
+        this.updateStatusReqTs = updateStatusReqTs;
+    }
+
+    public String getUpdateStatusResTs() {
+        return updateStatusResTs;
+    }
+
+    public void setUpdateStatusResTs(String updateStatusResTs) {
+        this.updateStatusResTs = updateStatusResTs;
+    }
+
+    public String getServiceTs() {
+        return serviceTs;
+    }
+
+    public void setServiceTs(String serviceTs) {
+        this.serviceTs = serviceTs;
+    }
 
     public String getListCss() {
         return listCss;

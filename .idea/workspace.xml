@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/list.css.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/list.html.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/list.ts.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/existsCodeReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/existsCodeRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/existsNameReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/existsNameRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getModelReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getModelRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getPageModel.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getPageParam.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getPageReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getPageRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getTotalReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/getTotalRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/saveModel.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/saveReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/saveRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/updateStatusReq.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/updateStatusRes.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/service.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsCodeRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsCodeResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/rms-vehicle.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" afterDir="false" />
@@ -16,6 +31,7 @@
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600065665064</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1">
+      <created>1600068927163</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1600068927163</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,16 +303,16 @@
     <MESSAGE value="设置swagger index.yaml" />
     <MESSAGE value="设置swagger apis.yaml" />
     <MESSAGE value="swagger 接口生成" />
-    <MESSAGE value="1" />
     <MESSAGE value="edit" />
     <MESSAGE value="edit 生成" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit 生成" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600065856000">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600070637596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600065856000" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600070637596" />
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1599660216612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -302,10 +325,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600065663136">
+    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600068925774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600065663136" />
+    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600068925774" />
     <state width="478" height="538" key="DebuggerActiveHint" timestamp="1600051734474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -318,22 +341,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1166" height="351" key="GridCell.Tab.0.bottom" timestamp="1600068811672">
+    <state width="1162" height="355" key="GridCell.Tab.0.bottom" timestamp="1600134282062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1166" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600068811672" />
-    <state width="1166" height="351" key="GridCell.Tab.0.center" timestamp="1600068811671">
+    <state width="1162" height="355" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600134282062" />
+    <state width="1162" height="355" key="GridCell.Tab.0.center" timestamp="1600134282062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1166" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600068811671" />
-    <state width="1166" height="351" key="GridCell.Tab.0.left" timestamp="1600068811671">
+    <state width="1162" height="355" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600134282062" />
+    <state width="1162" height="355" key="GridCell.Tab.0.left" timestamp="1600134282061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1166" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600068811671" />
-    <state width="1166" height="351" key="GridCell.Tab.0.right" timestamp="1600068811671">
+    <state width="1162" height="355" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600134282061" />
+    <state width="1162" height="355" key="GridCell.Tab.0.right" timestamp="1600134282062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1166" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600068811671" />
+    <state width="1162" height="355" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600134282062" />
     <state width="1177" height="399" key="GridCell.Tab.1.bottom" timestamp="1600051825977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -362,10 +385,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600052106053">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600068934637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600052106053" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600068934637" />
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -378,18 +401,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="356" y="76" width="843" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599814787283" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600065667692">
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600068929962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600065667692" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600068929962" />
     <state x="262" y="166" key="new project wizard" timestamp="1599726783551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="262" y="166" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599726783551" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599785168490">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600070903567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599785168490" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600070903567" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -731,7 +731,24 @@ public class CustomeConfigBuilder{
             this.setPathInfo(this.pathInfo,template.getListCss(),outputDir,"listCss_path","ListAngular");
             this.setPathInfo(this.pathInfo,template.getListHtml(),outputDir,"listHtml_path","ListAngular");
             this.setPathInfo(this.pathInfo,template.getListTs(),outputDir,"listTs_path","ListAngular");
-
+            this.setPathInfo(this.pathInfo,template.getServiceTs(),outputDir,"serviceTs_path","ServiceAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"existsCodeReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"existsCodeResTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"existsNameReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"existsNameResTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"getModelReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"getModelResTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"getPageReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"getPageResTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"getPageModelTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"getPageParamTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"getTotalReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"getTotalResTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"saveModelTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"saveReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"saveResTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"updateStatusReqTs_path","ServiceModelAngular");
+            this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"updateStatusResTs_path","ServiceModelAngular");
         }
     }
 
