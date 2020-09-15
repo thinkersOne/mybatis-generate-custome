@@ -1,4 +1,4 @@
-package com.baomidou.daoExt;
+package com.baomidou.daoext;
 
 import com.baomidou.entity.RmsVehicleEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

@@ -7,8 +7,8 @@ import com.baomidou.mybatisplus.generator.config.PackageConfig;
  */
 public class CustomePackageConfig extends PackageConfig {
     //包名
-    private String daoExt = "daoExt";
-    private String mapperExt = "mapperExt";
+    private String daoExt = "daoext";
+    private String mapperExt = "mapper";
 
     // swagger 模块 yaml文件
     private String indexYaml = "swagger-spec.all";
