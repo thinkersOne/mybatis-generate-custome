@@ -15,6 +15,10 @@
  */
 export interface RmsVehicleGetPageModel {
       /**
+       * 
+      */
+      id?: string;
+      /**
        * 组织机构id
       */
       sysOrgId?: string;

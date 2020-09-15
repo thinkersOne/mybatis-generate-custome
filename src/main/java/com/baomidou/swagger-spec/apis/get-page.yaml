@@ -31,6 +31,10 @@ definitions:
     description:
     type: object
     properties: 
+      id:
+        description: 
+        type: integer
+        format: int64
       sysOrgId:
         description: 组织机构id
         type: integer

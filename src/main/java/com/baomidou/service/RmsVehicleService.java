@@ -80,6 +80,7 @@ public class RmsVehicleService{
            entity.setCreateTime(new Date());
            entity.setStatus(1);
        }
+       entity.setId(saveModel.getId());
        entity.setSysOrgId(saveModel.getSysOrgId());
        entity.setLicense(saveModel.getLicense());
        entity.setRmsMotorcadeId(saveModel.getRmsMotorcadeId());
@@ -122,6 +123,7 @@ public class RmsVehicleService{
             RmsVehicleGetModelResponse response = new RmsVehicleGetModelResponse();
             RmsVehicleEntity entity = dao.selectByPrimaryKey(request.getId());
             RmsVehicleSaveModel saveModel = new RmsVehicleSaveModel();
+            saveModel.setId(entity.getId());
             saveModel.setSysOrgId(entity.getSysOrgId());
             saveModel.setLicense(entity.getLicense());
             saveModel.setRmsMotorcadeId(entity.getRmsMotorcadeId());
@@ -155,6 +157,7 @@ public class RmsVehicleService{
     // 导入
     public <T> ExcelFileInfo<T> getImportMeta() {
             ExcelFileInfo<T> info = new ExcelFileInfo<T>(null);
+            info.addExcelColumn("", "id");
             info.addExcelColumn("组织机构id", "sysOrgId");
             info.addExcelColumn("车牌号", "license");
             info.addExcelColumn("车队", "rmsMotorcadeId");
@@ -194,6 +197,7 @@ public class RmsVehicleService{
     // 列表转化
     private RmsVehicleGetPageModel toPageModel(RmsVehicleEntity entity) {
             RmsVehicleetPageModel model = new RmsVehicleGetPageModel();
+            model.setId(entity.getId());
             model.setSysOrgId(entity.getSysOrgId());
             model.setLicense(entity.getLicense());
             model.setRmsMotorcadeId(entity.getRmsMotorcadeId());

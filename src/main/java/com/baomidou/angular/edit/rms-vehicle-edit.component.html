@@ -3,7 +3,11 @@
 </div>
 <form nz-form #f="ngForm" (ngSubmit)="saveOnClick()">
   <div se-container="2">
-             <se label="组织机构id" [id]="'txtSysOrgId'" #seSysOrgId>
+             <se label="" [id]="'txtId'" #seId>
+            <input nz-input [(ngModel)]="model.id"
+                id="txtId" name="id" />
+        </se>
+        <se label="组织机构id" [id]="'txtSysOrgId'" #seSysOrgId>
             <input nz-input [(ngModel)]="model.sysOrgId"
                 id="txtSysOrgId" name="sysOrgId" />
         </se>

@@ -23,6 +23,7 @@ export class RmsVehicleComponent {
   data: any[] = []; // 数据源
   total:any = 0;
   columns: STColumn[] = [
+        {title: '', index: 'id', width: 100},
         {title: '组织机构id', index: 'sysOrgId', width: 100},
         {title: '车牌号', index: 'license', width: 100},
         {title: '车队', index: 'rmsMotorcadeId', width: 100},
