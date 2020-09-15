@@ -14,6 +14,7 @@ public class CustomeTemplateConfig {
     private String controller = "/templates/controller.java";
     private String mapperExt = "/templates/mapperExt.xml";
     private String daoExt = "/templates/daoExt.java";
+    private String enumErrorCode = "/templates/enumErrorCode.java";
 
     //设置 swagger yaml文件
     // index.yaml
@@ -65,6 +66,14 @@ public class CustomeTemplateConfig {
     private String saveResTs = "/templates/angular/model/saveRes.ts";
     private String updateStatusReqTs = "/templates/angular/model/updateStatusReq.ts";
     private String updateStatusResTs = "/templates/angular/model/updateStatusRes.ts";
+
+    public String getEnumErrorCode() {
+        return enumErrorCode;
+    }
+
+    public void setEnumErrorCode(String enumErrorCode) {
+        this.enumErrorCode = enumErrorCode;
+    }
 
     public String getExistsCodeReqTs() {
         return existsCodeReqTs;

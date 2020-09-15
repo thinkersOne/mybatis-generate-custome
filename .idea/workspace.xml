@@ -2,50 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/edit/rms-vehicle-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/edit/rms-vehicle-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsCodeRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsCodeResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsNameRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsNameResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetModelRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetModelResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageParam.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetTotalRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetTotalResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleSaveModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleSaveRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleSaveResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleUpdateStatusRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleUpdateStatusResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/rms-vehicle.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/controller/RmsVehicleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/daoExt/RmsVehicleDaoExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/mapperExt/RmsVehicleMapperExt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/service/RmsVehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/all/index.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/common.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/exists-code.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/exists-name.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-model.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-page.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-total.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/rms-vehicle-api.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/save.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/update-status.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/models/common/page-param.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/models/response.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/enumErrorCode.java.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/GenerateModelCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/GenerateModelCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateModelCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/GenerateModelCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/service.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600134324944</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="service生成优化">
+      <created>1600153352348</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600153352349</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,13 +310,14 @@
     <MESSAGE value="edit 生成" />
     <MESSAGE value="1" />
     <MESSAGE value="生成前端代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="生成前端代码" />
+    <MESSAGE value="service生成优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="service生成优化" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600070637596">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600153666879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600070637596" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600153666879" />
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1599660216612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -361,14 +330,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600134323294">
+    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600153350912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600134323294" />
-    <state width="478" height="538" key="DebuggerActiveHint" timestamp="1600051734474">
+    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600153350912" />
+    <state width="625" height="538" key="DebuggerActiveHint" timestamp="1600154365918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="478" height="538" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1600051734474" />
+    <state width="625" height="538" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1600154365918" />
     <state x="26" y="51" width="1350" height="638" key="DiffContextDialog" timestamp="1599791335819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -377,38 +346,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1004" height="416" key="GridCell.Tab.0.bottom" timestamp="1600153299231">
+    <state width="1176" height="399" key="GridCell.Tab.0.bottom" timestamp="1600154371756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1004" height="416" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600153299231" />
-    <state width="1004" height="416" key="GridCell.Tab.0.center" timestamp="1600153299231">
+    <state width="1176" height="399" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600154371756" />
+    <state width="1176" height="399" key="GridCell.Tab.0.center" timestamp="1600154371756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1004" height="416" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600153299231" />
-    <state width="1004" height="416" key="GridCell.Tab.0.left" timestamp="1600153299231">
+    <state width="1176" height="399" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600154371756" />
+    <state width="1176" height="399" key="GridCell.Tab.0.left" timestamp="1600154371754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1004" height="416" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600153299231" />
-    <state width="1004" height="416" key="GridCell.Tab.0.right" timestamp="1600153299231">
+    <state width="1176" height="399" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600154371754" />
+    <state width="1176" height="399" key="GridCell.Tab.0.right" timestamp="1600154371756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1004" height="416" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600153299231" />
-    <state width="1177" height="399" key="GridCell.Tab.1.bottom" timestamp="1600051825977">
+    <state width="1176" height="399" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600154371756" />
+    <state width="1176" height="399" key="GridCell.Tab.1.bottom" timestamp="1600154334951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="399" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600051825977" />
-    <state width="1177" height="399" key="GridCell.Tab.1.center" timestamp="1600051825976">
+    <state width="1176" height="399" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
+    <state width="1176" height="399" key="GridCell.Tab.1.center" timestamp="1600154334951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="399" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600051825976" />
-    <state width="1177" height="399" key="GridCell.Tab.1.left" timestamp="1600051825976">
+    <state width="1176" height="399" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
+    <state width="1176" height="399" key="GridCell.Tab.1.left" timestamp="1600154334951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="399" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600051825976" />
-    <state width="1177" height="399" key="GridCell.Tab.1.right" timestamp="1600051825977">
+    <state width="1176" height="399" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
+    <state width="1176" height="399" key="GridCell.Tab.1.right" timestamp="1600154334951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="399" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600051825977" />
+    <state width="1176" height="399" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1599790492379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -421,26 +390,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600134337032">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600153361509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600134337032" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600153361509" />
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599726051944" />
-    <state x="499" y="180" key="extract.method.dialog" timestamp="1600049238665">
+    <state x="499" y="180" key="extract.method.dialog" timestamp="1600154091706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="180" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600049238665" />
+    <state x="499" y="180" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600154091706" />
     <state x="356" y="76" width="843" height="534" key="find.popup" timestamp="1599814787283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="356" y="76" width="843" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599814787283" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600134328523">
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600153354677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600134328523" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600153354677" />
     <state x="262" y="166" key="new project wizard" timestamp="1599726783551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
