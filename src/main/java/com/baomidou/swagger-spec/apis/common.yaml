@@ -1,0 +1,117 @@
+swagger: 2.0
+definitions:
+  RmsVehicleGetPageParam:
+    description:
+    type: object
+    properties:
+      keyword:
+        description: 名称 编码
+        type: string
+  RmsVehicleSaveModel:
+    description:
+    type: object
+    properties:
+      sysOrgId:
+        description: 组织机构id
+        type: integer
+        format: int64
+      license:
+        description: 车牌号
+        type: string
+        format:
+      rmsMotorcadeId:
+        description: 车队
+        type: integer
+        format: int64
+      taskStatus:
+        description: 运输状态
+        type: integer
+        format:
+      energyType:
+        description: 车辆类型 0:燃油车 1:新能源
+        type: integer
+        format: int64
+      sourceType:
+        description: 车辆来源 0:自有车辆 1：社会车辆
+        type: integer
+        format: int64
+      status:
+        description: 状态 0:停用 1:启用
+        type: integer
+        format:
+      authStatus:
+        description: 0:未授权 1：已授权
+        type: integer
+        format:
+      vehicleTypeId:
+        description: 车型
+        type: integer
+        format: int64
+      length:
+        description: 车长(m)
+        type: number
+        format: double
+      width:
+        description: 车宽(m)
+        type: number
+        format: double
+      height:
+        description: 车高(m)
+        type: number
+        format: double
+      ratedLoad:
+        description: 载重(kg)
+        type: number
+        format: double
+      ratedVolume:
+        description: 体积(m3)
+        type: number
+        format: double
+      vehicleBrandId:
+        description: 车辆品牌(新能源车)
+        type: integer
+        format: int64
+      createUser:
+        description: 创建人
+        type: string
+        format:
+      updateUser:
+        description: 修改人
+        type: string
+        format:
+      createTime:
+        description: 创建日期
+        type: string
+        format: date
+      tenantId:
+        description: 租户
+        type: integer
+        format: int64
+      roadTransportNum:
+        description: 道路运输证号
+        type: string
+        format:
+      enduranceMileage:
+        description: 续航里程(新能源车)
+        type: number
+        format: double
+      pinYin:
+        description: 拼音
+        type: string
+        format:
+      remark:
+        description: 
+        type: string
+        format:
+      carriageTypeId:
+        description: 车厢类型
+        type: integer
+        format: int64
+      companyId:
+        description: 所属公司
+        type: integer
+        format: int64
+      sysAppId:
+        description: 1:TMS 2:云调度 3:云驹宝
+        type: integer
+        format: int64

@@ -1,5 +1,6 @@
 package com.baomidou.mybatisplus.samples.generator.generate;
 
+import com.baomidou.entity.RmsDriverEntity;
 import com.baomidou.mybatisplus.samples.generator.utils.ListUtils;
 import com.baomidou.mybatisplus.samples.generator.utils.ReflectUtil;
 
@@ -36,8 +37,8 @@ public class GenerateModelCode {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Date().toString());
-
+//        System.out.println(new Date().toString());
+        printEntityAllSetMethod(RmsDriverEntity.class);
     }
 
 }

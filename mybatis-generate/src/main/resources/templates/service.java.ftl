@@ -76,25 +76,22 @@ public class ${table.serviceName}{
     */
     public ${table.entityName}Entity load${table.entityName}Entity(${table.entityName}SaveModel saveModel,
     ${table.entityName}Entity entity,AdminSessionInfo sessionInfo){
-            if (entity == null) {
-                entity = new ${table.entityName}Entity();
-                entity.setTenantId(sessionInfo.getCurrentTenantId());
-                entity.setCreateUser(sessionInfo.getSysUserName());
-                entity.setCreateTime(new Date());
-                entity.setStatus(1);
-            }
-            entity.setCode(saveModel.getCode());
-            entity.setId(saveModel.getId());
-            entity.setName(saveModel.getName());
-            entity.setPinYin(saveModel.getPinYin());
-            entity.setPlanTime(saveModel.getPlanTime());
-            entity.setRemark(saveModel.getRemark());
-            entity.setRmsProjectId(saveModel.getRmsProjectId());
-            entity.setStatus(saveModel.getStatus());
-            entity.setPinYin(PinYinUtil.getPinYinHeadChar(saveModel.getName()));
-            entity.setUpdateUser(sessionInfo.getSysUserName());
-            entity.setUpdateTime(new Date());
-            return  entity;
+       if (entity == null) {
+           entity = new ${table.entityName}Entity();
+           entity.setTenantId(sessionInfo.getCurrentTenantId());
+           entity.setCreateUser(sessionInfo.getSysUserName());
+           entity.setCreateTime(new Date());
+           entity.setStatus(1);
+       }
+     <#list table.fields as f>
+       <#if f.name != 'tenant_id' && f.name != 'create_user' && f.name != 'create_time' && f.name != 'status'
+       && f.name != 'update_user' && f.name != 'update_time'>
+       entity.set${f.propertyName ? cap_first}(saveModel.get${f.propertyName ? cap_first}());
+       </#if>
+     </#list>
+       entity.setUpdateUser(sessionInfo.getSysUserName());
+       entity.setUpdateTime(new Date());
+       return  entity;
     }
     // check
     public ${table.entityName}SaveResponse check(${table.entityName}SaveRequest request) {
@@ -113,62 +110,18 @@ public class ${table.serviceName}{
             ${table.entityName}GetModelResponse response = new ${table.entityName}GetModelResponse();
             ${table.entityName}Entity entity = dao.selectByPrimaryKey(request.getId());
             ${table.entityName}SaveModel saveModel = new ${table.entityName}SaveModel();
-            saveModel.setBalanceAmount(entity.getBalanceAmount());
-            saveModel.setCardNo(entity.getCardNo());
-            saveModel.setCarrierType(entity.getCarrierType());
-            saveModel.setDriverId(entity.getDriverId());
-            saveModel.setId(entity.getId());
-            saveModel.setOilCardType(entity.getOilCardType());
-            saveModel.setOilCardTypeName(Enum${table.entityName}Type.getText(entity.getOilCardType()));
-            saveModel.setOperationMode(entity.getOperationMode());
-            saveModel.setOperationModeName(Enum${table.entityName}OperationMode.getText(entity.getOperationMode()));
-            saveModel.setRemark(entity.getRemark());
-            saveModel.setRmsMotorcadeId(entity.getRmsMotorcadeId());
-            saveModel.setSellerCompanyId(entity.getSellerCompanyId());
-            saveModel.setStatus(entity.getStatus());
-            saveModel.setStatusName(Enum${table.entityName}Status.getText(entity.getStatus()));
-            saveModel.setLossStatus(entity.getLossStatus());
-            saveModel.setLossStatusName(Enum${table.entityName}LossStatus.getText(entity.getLossStatus()));
-            saveModel.setAllocationStatus(entity.getAllocationStatus());
-            saveModel.setAllocationStatusName(Enum${table.entityName}AllocationStatus.getText(entity.getAllocationStatus()));
-            saveModel.setVehicleLicense(entity.getVehicleLicense());
-            saveModel.setRmsVehicleId(entity.getRmsVehicleId());
-            saveModel.setSupplierId(entity.getSupplierId());
-            saveModel.setSysOrgId(entity.getSysOrgId());
-            saveModel.setRmsProjectId(entity.getRmsProjectId());
-            saveModel.setDepositAmount(entity.getDepositAmount());
+          <#list table.fields as f>
+            saveModel.set${f.propertyName ? cap_first}(entity.get${f.propertyName ? cap_first}());
+          </#list>
             response.setData(saveModel);
             return response;
     }
     // 导入
     public <T> ExcelFileInfo<T> getImportMeta() {
             ExcelFileInfo<T> info = new ExcelFileInfo<T>(null);
-            info.addExcelColumn("油卡余额", "balanceAmount");
-
-            info.addExcelColumn("卡号", "cardNo");
-
-            info.addExcelColumn("承运商类型 0: 个人 1:公司 2:车队", "carrierType");
-
-            info.addExcelColumn("司机ID", "driverId");
-
-            info.addExcelColumn("id", "id");
-
-            info.addExcelColumn("油卡类型(中石化 中石油)", "oilCardType");
-
-            info.addExcelColumn("营运模式（自营/外请）", "operationMode");
-
-            info.addExcelColumn("备注", "remark");
-
-            info.addExcelColumn("车队id", "rmsMotorcadeId");
-
-            info.addExcelColumn("承运商id", "sellerCompanyId");
-
-            info.addExcelColumn("状态(已下发/可下发/已作废)", "status");
-
-            info.addExcelColumn("供应商id", "supplierId");
-
-            info.addExcelColumn("网点(所属组织id)", "sysOrgId");
-
+          <#list table.fields as f>
+            info.addExcelColumn("${f.comment}", "${f.propertyName}");
+          </#list>
             return info;
     }
     // 导出
@@ -181,57 +134,9 @@ public class ${table.serviceName}{
     // 列表转化
     private ${table.entityName}GetPageModel toPageModel(${table.entityName}Entity entity) {
             ${table.entityName}etPageModel model = new ${table.entityName}GetPageModel();
-
-            model.setBalanceAmount(entity.getBalanceAmount());
-
-            model.setCardNo(entity.getCardNo());
-
-            model.setCarrierType(entity.getCarrierType());
-            model.setCarrierTypeName(EnumVmsCarrierType.getText(entity.getCarrierType()));
-
-            model.setCreateTime(entity.getCreateTime());
-
-            model.setCreateUser(entity.getCreateUser());
-
-            model.setDriverId(entity.getDriverId());
-
-            model.setId(entity.getId());
-
-            model.setOilCardType(entity.getOilCardType());
-            model.setOilCardTypeName(EnumVmsOilCardType.getText(entity.getOilCardType()));
-
-            model.setOperationMode(entity.getOperationMode());
-            model.setOperationModeName(EnumVmsOilCardOperationMode.getText(entity.getOperationMode()));
-
-            model.setRemark(entity.getRemark());
-
-            model.setRmsMotorcadeId(entity.getRmsMotorcadeId());
-
-            model.setSellerCompanyId(entity.getSellerCompanyId());
-
-            model.setStatus(entity.getStatus());
-            model.setStatusName(EnumVmsOilCardStatus.getText(entity.getStatus()));
-
-            model.setAllocationStatus(entity.getAllocationStatus());
-            model.setAllocationStatusName(EnumVmsOilCardAllocationStatus.getText(entity.getAllocationStatus()));
-            model.setLossStatus(entity.getLossStatus());
-            model.setLossStatusName(EnumVmsOilCardLossStatus.getText(entity.getLossStatus()));
-
-            model.setVehicleLicense(entity.getVehicleLicense());
-            model.setRmsVehicleId(entity.getRmsVehicleId());
-
-            model.setSupplierId(entity.getSupplierId());
-
-            model.setSysOrgId(entity.getSysOrgId());
-            model.setRmsProjectId(entity.getRmsProjectId());
-            model.setDepositAmount(entity.getDepositAmount());
-
-            model.setTenantId(entity.getTenantId());
-
-            model.setUpdateTime(entity.getUpdateTime());
-
-            model.setUpdateUser(entity.getUpdateUser());
-
+          <#list table.fields as f>
+            model.set${f.propertyName ? cap_first}(entity.get${f.propertyName ? cap_first}());
+          </#list>
             return model;
      }
     // 获取导出数据
