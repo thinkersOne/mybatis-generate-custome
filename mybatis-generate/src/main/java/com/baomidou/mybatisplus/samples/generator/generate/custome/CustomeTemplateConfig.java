@@ -66,6 +66,33 @@ public class CustomeTemplateConfig {
     private String saveResTs = "/templates/angular/model/saveRes.ts";
     private String updateStatusReqTs = "/templates/angular/model/updateStatusReq.ts";
     private String updateStatusResTs = "/templates/angular/model/updateStatusRes.ts";
+    private String modelsTs = "/templates/angular/model/models.ts";
+    private String pageParamTs = "/templates/angular/model/pageParam.ts";
+    private String responseTs = "/templates/angular/model/response.ts";
+
+    public String getModelsTs() {
+        return modelsTs;
+    }
+
+    public void setModelsTs(String modelsTs) {
+        this.modelsTs = modelsTs;
+    }
+
+    public String getPageParamTs() {
+        return pageParamTs;
+    }
+
+    public void setPageParamTs(String pageParamTs) {
+        this.pageParamTs = pageParamTs;
+    }
+
+    public String getResponseTs() {
+        return responseTs;
+    }
+
+    public void setResponseTs(String responseTs) {
+        this.responseTs = responseTs;
+    }
 
     public String getEnumErrorCode() {
         return enumErrorCode;

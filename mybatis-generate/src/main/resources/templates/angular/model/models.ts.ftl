@@ -1,0 +1,20 @@
+export * from './pageParam';
+export * from './response';
+export * from './${table.entityName ? uncap_first}ExistsCodeRequest';
+export * from './${table.entityName ? uncap_first}ExistsCodeResponse';
+export * from './${table.entityName ? uncap_first}ExistsNameRequest';
+export * from './${table.entityName ? uncap_first}ExistsNameResponse';
+export * from './${table.entityName ? uncap_first}GetModelRequest';
+export * from './${table.entityName ? uncap_first}GetModelResponse';
+export * from './${table.entityName ? uncap_first}GetPageModel';
+export * from './${table.entityName ? uncap_first}GetPageParam';
+export * from './${table.entityName ? uncap_first}GetPageRequest';
+export * from './${table.entityName ? uncap_first}GetPageResponse';
+export * from './${table.entityName ? uncap_first}GetTotalRequest';
+export * from './${table.entityName ? uncap_first}GetTotalResponse';
+export * from './${table.entityName ? uncap_first}SaveModel';
+export * from './${table.entityName ? uncap_first}SaveRequest';
+export * from './${table.entityName ? uncap_first}SaveResponse';
+export * from './${table.entityName ? uncap_first}UpdateStatusRequest';
+export * from './${table.entityName ? uncap_first}UpdateStatusResponse';
+

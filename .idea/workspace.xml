@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/models.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/pageParam.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/angular/model/response.ts.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/pageParam.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/response.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeAbstractTemplateEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeTemplateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsCodeRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleExistsCodeRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsCodeResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleExistsCodeResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsNameRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleExistsNameRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleExistsNameResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleExistsNameResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetModelRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetModelRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetModelResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetModelResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetPageModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageParam.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetPageParam.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetPageRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetPageResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetPageResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetTotalRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetTotalRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleGetTotalResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetTotalResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleSaveModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleSaveModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleSaveRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleSaveRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleSaveResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleSaveResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleUpdateStatusRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleUpdateStatusRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rms-vehicleUpdateStatusResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleUpdateStatusResponse.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,8 +151,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MysqlGenerator (1)" />
-        <item itemvalue="Application.GenerateModelCode" />
         <item itemvalue="Application.StringUtil" />
+        <item itemvalue="Application.GenerateModelCode" />
         <item itemvalue="Application.MysqlGenerator" />
       </list>
     </recent_temporary>
@@ -263,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600154402326</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="readme.txt">
+      <created>1600154794388</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1600154794388</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,13 +354,14 @@
     <MESSAGE value="生成前端代码" />
     <MESSAGE value="service生成优化" />
     <MESSAGE value="EnumErrorCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="EnumErrorCode" />
+    <MESSAGE value="readme.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme.txt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600153666879">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600156314521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600153666879" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600156314521" />
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1599660216612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -335,10 +374,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600154400829">
+    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600154793282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600154400829" />
+    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600154793282" />
     <state width="625" height="538" key="DebuggerActiveHint" timestamp="1600154365918">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -351,42 +390,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1176" height="399" key="GridCell.Tab.0.bottom" timestamp="1600154371756">
+    <state width="1175" height="397" key="GridCell.Tab.0.bottom" timestamp="1600156858303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600154371756" />
-    <state width="1176" height="399" key="GridCell.Tab.0.center" timestamp="1600154371756">
+    <state width="1175" height="397" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600156858303" />
+    <state width="1175" height="397" key="GridCell.Tab.0.center" timestamp="1600156858303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600154371756" />
-    <state width="1176" height="399" key="GridCell.Tab.0.left" timestamp="1600154371754">
+    <state width="1175" height="397" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600156858303" />
+    <state width="1175" height="397" key="GridCell.Tab.0.left" timestamp="1600156858303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600154371754" />
-    <state width="1176" height="399" key="GridCell.Tab.0.right" timestamp="1600154371756">
+    <state width="1175" height="397" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600156858303" />
+    <state width="1175" height="397" key="GridCell.Tab.0.right" timestamp="1600156858303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600154371756" />
-    <state width="1176" height="399" key="GridCell.Tab.1.bottom" timestamp="1600154334951">
+    <state width="1175" height="397" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600156858303" />
+    <state width="1018" height="340" key="GridCell.Tab.1.bottom" timestamp="1600155712001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
-    <state width="1176" height="399" key="GridCell.Tab.1.center" timestamp="1600154334951">
+    <state width="1018" height="340" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600155712001" />
+    <state width="1018" height="340" key="GridCell.Tab.1.center" timestamp="1600155712001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
-    <state width="1176" height="399" key="GridCell.Tab.1.left" timestamp="1600154334951">
+    <state width="1018" height="340" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600155712001" />
+    <state width="1018" height="340" key="GridCell.Tab.1.left" timestamp="1600155712000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
-    <state width="1176" height="399" key="GridCell.Tab.1.right" timestamp="1600154334951">
+    <state width="1018" height="340" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600155712000" />
+    <state width="1018" height="340" key="GridCell.Tab.1.right" timestamp="1600155712001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1176" height="399" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600154334951" />
+    <state width="1018" height="340" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600155712001" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1599790492379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1599790492379" />
+    <state x="583" y="346" key="ReplaceDuplicatesPrompt" timestamp="1600156440561">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="583" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1600156440561" />
     <state x="430" y="123" key="RollbackChangesDialog" timestamp="1599791337178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -395,18 +438,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600154411206">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600154799059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600154411206" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600154799059" />
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599726051944" />
-    <state x="499" y="180" key="extract.method.dialog" timestamp="1600154091706">
+    <state x="725" y="259" width="538" height="472" key="extract.method.dialog" timestamp="1600156418128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="180" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600154091706" />
+    <state x="725" y="259" width="538" height="472" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600156418128" />
     <state x="356" y="76" width="843" height="534" key="find.popup" timestamp="1599814787283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

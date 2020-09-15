@@ -65,6 +65,15 @@ public class StringUtil {
         return inputString.replace("_", "-");
     }
 
+    /**
+     * 去掉表 的 _ 并采用驼峰命名
+     * @param str
+     * @return
+     */
+    public static String removeUnderLineName(String str){
+        return getCamelCaseString(str,false);
+    }
+
     public static String getPackage(String inputString){
         return inputString.replace("_",".");
     }
@@ -86,13 +95,11 @@ public class StringUtil {
         if (str == null || (strLen = str.length()) == 0) {
             return str;
         }
-
         final char firstChar = str.charAt(0);
         if (Character.isTitleCase(firstChar)) {
             // already capitalized
             return str;
         }
-
         StringBuilder sb = new StringBuilder(strLen);
         sb.append(concatStr);
         sb.append(Character.toTitleCase(firstChar));
@@ -109,7 +116,6 @@ public class StringUtil {
      */
     public static String getCamelCaseString(String inputString, boolean firstCharacterUppercase) {
         StringBuilder sb = new StringBuilder();
-
         boolean nextUpperCase = false;
         for (int i = 0; i < inputString.length(); i++) {
             char c = inputString.charAt(i);
@@ -138,11 +144,9 @@ public class StringUtil {
                     break;
             }
         }
-
         if (firstCharacterUppercase) {
             sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
         }
-
         return sb.toString();
     }
 
@@ -178,68 +182,6 @@ public class StringUtil {
         return Arrays.asList(keyword.split("[,，]"));
     }
 
-    /**
-     * 转大写
-     * @param str
-     * @return
-     */
-    public static String toUpperCase(String str){
-        if(StringUtil.isNullOrEmpty(str)){
-            return "";
-        }
-        return str.toUpperCase();
-    }
-
-    /**
-     * 校验 字符 s是否超过指定 len长度
-     * @param s
-     * @param len
-     * @return
-     */
-    public static boolean checkLen(String s,int len){
-        if(StringUtil.isNullOrEmpty(s)){
-            return false;
-        }
-        return s.length() > len;
-    }
-
-    /**
-     * 校验燃油车
-     * 车牌号 是否 合规
-     * true： 合规
-     * false： 不合规
-     * @param license
-     * @return
-     */
-    public static boolean checkFuelVehicle(String license) {
-        if (org.springframework.util.StringUtils.isEmpty(license)) {
-            return false;
-        }
-        //车牌号 不得出现 字母 I 和 O
-        if(license.indexOf("I") > -1 || license.indexOf("O") > -1){
-            return false;
-        }
-        String regex = "^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领]{1}[A-Z]{1}[A-Z0-9]{4}[A-Z0-9挂]{1}$";
-        return Pattern.matches(regex, license);
-    }
-
-    /**
-     * 校验新能源车
-     * @param license
-     * @return
-     */
-    public static boolean checkNewEnergyVehicle(String license) {
-        if (org.springframework.util.StringUtils.isEmpty(license)) {
-            return false;
-        }
-        //车牌号 不得出现 字母 I 和 O
-        if(license.indexOf("I") > -1 || license.indexOf("O") > -1){
-            return false;
-        }
-        String regex = "^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领]{1}[A-Z]{1}[A-Z0-9]{5}[A-Z0-9挂]{1}$";
-        return Pattern.matches(regex, license);
-    }
-
     public static void main(String[] args) {
 //        String license = "沪WKJ2225";
 //        System.out.println(checkFuelVehicle(license));
@@ -251,7 +193,8 @@ public class StringUtil {
 //        System.out.println(firstStringToUpper("sysOrgRegionId"));
 
         String str = "rms_driver";
-        System.out.println(getMiddleLineName(str));
+//        System.out.println(getMiddleLineName(str));
+        System.out.println(getCamelCaseString(str,false));
 
     }
 

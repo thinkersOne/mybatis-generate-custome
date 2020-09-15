@@ -713,22 +713,26 @@ public class CustomeConfigBuilder{
             this.setPathInfo(this.pathInfo,template.getEnumErrorCode(),outputDir,"enumErrorCode_path","Service");
 
             // 设置 swagger
-            this.setPathInfo(this.pathInfo,template.getIndex(),outputDir,"indexYaml_path","IndexYaml");
-            this.setPathInfo(this.pathInfo,template.getApis(),outputDir,"apisYaml_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getCommon(),outputDir,"common_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getExistsCode(),outputDir,"existsCode_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getExistsName(),outputDir,"existsName_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getGetModel(),outputDir,"getModel_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getGetPage(),outputDir,"getPage_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getGetTotal(),outputDir,"getTotal_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getSave(),outputDir,"save_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getUpdateStatus(),outputDir,"updateStatus_path","ApisYaml");
-            this.setPathInfo(this.pathInfo,template.getPageParam(),outputDir,"pageParam_path","ModelsCommonYaml");
-            this.setPathInfo(this.pathInfo,template.getResponse(),outputDir,"response_path","ModelsYaml");
+            setSwaggerPathInfo(template, outputDir);
 
             // 设置 angular 前端
             setAngularPathInfo(template, outputDir);
         }
+    }
+
+    private void setSwaggerPathInfo(CustomeTemplateConfig template, String outputDir) {
+        this.setPathInfo(this.pathInfo,template.getIndex(),outputDir,"indexYaml_path","IndexYaml");
+        this.setPathInfo(this.pathInfo,template.getApis(),outputDir,"apisYaml_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getCommon(),outputDir,"common_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getExistsCode(),outputDir,"existsCode_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getExistsName(),outputDir,"existsName_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getGetModel(),outputDir,"getModel_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getGetPage(),outputDir,"getPage_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getGetTotal(),outputDir,"getTotal_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getSave(),outputDir,"save_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getUpdateStatus(),outputDir,"updateStatus_path","ApisYaml");
+        this.setPathInfo(this.pathInfo,template.getPageParam(),outputDir,"pageParam_path","ModelsCommonYaml");
+        this.setPathInfo(this.pathInfo,template.getResponse(),outputDir,"response_path","ModelsYaml");
     }
 
     private void setAngularPathInfo(CustomeTemplateConfig template, String outputDir) {
@@ -755,6 +759,9 @@ public class CustomeConfigBuilder{
         this.setPathInfo(this.pathInfo,template.getExistsCodeReqTs(),outputDir,"saveResTs_path","ServiceModelAngular");
         this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"updateStatusReqTs_path","ServiceModelAngular");
         this.setPathInfo(this.pathInfo,template.getExistsCodeResTs(),outputDir,"updateStatusResTs_path","ServiceModelAngular");
+        this.setPathInfo(this.pathInfo,template.getModelsTs(),outputDir,"modelsTs_path","ServiceModelAngular");
+        this.setPathInfo(this.pathInfo,template.getPageParamTs(),outputDir,"pageParamTs_path","ServiceModelAngular");
+        this.setPathInfo(this.pathInfo,template.getResponseTs(),outputDir,"responseTs_path","ServiceModelAngular");
     }
 
     public GlobalConfig getGlobalConfig() {
