@@ -17,6 +17,11 @@ class ${table.serviceName}
 <#else>
 @Service
 public class ${table.serviceName}{
+    @Autowired
+    ${table.entityName}Dao dao;
+    @Autowired
+    ${table.daoExtName} daoExt;
+
    //列表查询
    public ${table.entityName}GetPageResponse getPage(${table.entityName}GetPageRequest request) {
        ${table.entityName}GetPageResponse response = new ${table.entityName}GetPageResponse();
@@ -33,6 +38,27 @@ public class ${table.serviceName}{
        response.setTotal(total);
        response.setCode(Response.OK);
        return response;
+   }
+
+   public boolean existsName(String name, Long id) {
+       if (name == null) {
+           return false;
+       }
+       ${table.entityName}Example example = new ${table.entityName}Example();
+       ${table.entityName}Example.Criteria criteria = example.createCriteria().andNameEqualTo(name);
+       if (id != null) {
+           criteria.andIdNotEqualTo(id);
+       }
+       return dao.countByExample(example) > 0;
+   }
+
+   public boolean existsCode(String code, Long id) {
+       ${table.entityName}Example example = new ${table.entityName}Example();
+       ${table.entityName}Example.Criteria criteria = example.createCriteria().andCodeEqualTo(code);
+       if (id != null) {
+           criteria.andIdNotEqualTo(id);
+       }
+       return dao.countByExample(example) > 0;
    }
 
     /**
@@ -133,7 +159,7 @@ public class ${table.serviceName}{
     }
     // 列表转化
     private ${table.entityName}GetPageModel toPageModel(${table.entityName}Entity entity) {
-            ${table.entityName}etPageModel model = new ${table.entityName}GetPageModel();
+            ${table.entityName}GetPageModel model = new ${table.entityName}GetPageModel();
           <#list table.fields as f>
             model.set${f.propertyName ? cap_first}(entity.get${f.propertyName ? cap_first}());
           </#list>
@@ -157,8 +183,5 @@ public class ${table.serviceName}{
         dao.updateByPrimaryKeySelective(entity);
         return response;
     }
-
-
-
 }
 </#if>

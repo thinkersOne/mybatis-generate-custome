@@ -22,7 +22,7 @@ definitions:
         description: ${f.comment}
         type: string
         format:
-    <#elseif f.type == 'int'>
+    <#elseif f.type ?contains('int')>
       ${f.propertyName}:
         description: ${f.comment}
         type: integer
@@ -33,6 +33,11 @@ definitions:
         type: number
         format: double
     <#elseif f.type ?contains("date")>
+      ${f.propertyName}:
+        description: ${f.comment}
+        type: string
+        format: date
+    <#elseif f.type ?contains("timestamp")>
       ${f.propertyName}:
         description: ${f.comment}
         type: string
