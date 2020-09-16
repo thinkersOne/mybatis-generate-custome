@@ -711,10 +711,8 @@ public class CustomeConfigBuilder{
             this.setPathInfo(this.pathInfo,template.getDaoExt(),outputDir,"daoExt_path","DaoExt");
             this.setPathInfo(this.pathInfo,template.getMapperExt(),outputDir,"mapperExt_path","MapperExt");
             this.setPathInfo(this.pathInfo,template.getEnumErrorCode(),outputDir,"enumErrorCode_path","Service");
-
             // 设置 swagger
             setSwaggerPathInfo(template, outputDir);
-
             // 设置 angular 前端
             setAngularPathInfo(template, outputDir);
         }
