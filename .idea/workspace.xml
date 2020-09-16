@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/com/baomidou/mybatisplus/samples/generator/MysqlGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/edit/rms-vehicle-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/edit/rms-vehicle-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/rms-vehicle.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetPageModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleGetPageModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleSaveModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/angular/service/model/rmsVehicleSaveModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/service/RmsVehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/service/RmsVehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/common.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/common.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-page.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baomidou/swagger-spec/apis/get-page.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/service/EnumRmsVehicleErrorCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baomidou/service/RmsVehicleService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600157391258</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="id">
+      <created>1600160118564</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1600160118564</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,7 +354,8 @@
     <MESSAGE value="readme.txt" />
     <MESSAGE value="生成 其他models模板" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="id" />
+    <option name="LAST_COMMIT_MESSAGE" value="id" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600156314521">
@@ -373,10 +374,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600157389556">
+    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600160117185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600157389556" />
+    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600160117185" />
     <state width="625" height="538" key="DebuggerActiveHint" timestamp="1600159956832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -389,38 +390,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599660491900" />
-    <state width="1035" height="268" key="GridCell.Tab.0.bottom" timestamp="1600160087644">
+    <state width="1016" height="337" key="GridCell.Tab.0.bottom" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1035" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600160087644" />
-    <state width="1035" height="268" key="GridCell.Tab.0.center" timestamp="1600160087644">
+    <state width="1016" height="337" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.0.center" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1035" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600160087644" />
-    <state width="1035" height="268" key="GridCell.Tab.0.left" timestamp="1600160087644">
+    <state width="1016" height="337" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.0.left" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1035" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600160087644" />
-    <state width="1035" height="268" key="GridCell.Tab.0.right" timestamp="1600160087644">
+    <state width="1016" height="337" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.0.right" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1035" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600160087644" />
-    <state width="1016" height="337" key="GridCell.Tab.1.bottom" timestamp="1600160036628">
+    <state width="1016" height="337" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.1.bottom" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1016" height="337" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600160036628" />
-    <state width="1016" height="337" key="GridCell.Tab.1.center" timestamp="1600160036628">
+    <state width="1016" height="337" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.1.center" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1016" height="337" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600160036628" />
-    <state width="1016" height="337" key="GridCell.Tab.1.left" timestamp="1600160036628">
+    <state width="1016" height="337" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.1.left" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1016" height="337" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600160036628" />
-    <state width="1016" height="337" key="GridCell.Tab.1.right" timestamp="1600160036628">
+    <state width="1016" height="337" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
+    <state width="1016" height="337" key="GridCell.Tab.1.right" timestamp="1600162734873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1016" height="337" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600160036628" />
+    <state width="1016" height="337" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600162734873" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1599790492379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -437,10 +438,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600157398545">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600160128647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600157398545" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600160128647" />
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -453,10 +454,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="356" y="76" width="843" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599814787283" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600157394605">
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600160121256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600157394605" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600160121256" />
     <state x="262" y="166" key="new project wizard" timestamp="1599726783551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -478,11 +479,6 @@
           <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java</url>
           <line>639</line>
           <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java</url>
-          <line>323</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-generate/src/main/java/com/baomidou/mybatisplus/samples/generator/generate/custome/CustomeConfigBuilder.java</url>

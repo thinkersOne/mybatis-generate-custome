@@ -15,7 +15,7 @@ export class ${table.entityName}EditComponent implements OnInit {
   constructor(
     private msg: NzMessageService,
     private modal: NzModalRef,
-    private ${table.entityName ? uncap_first}Service: ${table.entityName}Service,private http:E8HttpClient,
+    private ${table.entityName ? uncap_first}Service: ${table.entityName}Service,public http:E8HttpClient,
   ) { }
 
   ngOnInit() {
