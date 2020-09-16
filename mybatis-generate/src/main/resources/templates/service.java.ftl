@@ -3,6 +3,26 @@ package ${package.Service};
 import ${package.Entity}.${entity}Entity;
 import ${superServiceClassPackage};
 import org.springframework.stereotype.Service;
+import com.chengju.cloud.framework.model.Response;
+import com.chengju.cloud.security.admin.AdminSessionInfo;
+import com.chengju.common.dao.SqlPageParam;
+import com.chengju.common.excel.ExcelFileInfo;
+import com.chengju.common.operationlog.core.OpLogWriter;
+import com.chengju.common.operationlog.util.ToMapUtil;
+import com.chengju.tms.core.enums.EnumOperationType;
+import com.chengju.tms.service.BaseService;
+import ${package.DaoExt}.${table.entityName}DaoExt;
+import com.chengju.vms.model.*;
+import com.chengju.vms.repository.dao.${table.entityName}Dao;
+import com.chengju.vms.repository.model.${table.entityName}Entity;
+import com.chengju.vms.repository.model.${table.entityName}Example;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -16,7 +36,7 @@ import org.springframework.stereotype.Service;
 class ${table.serviceName}
 <#else>
 @Service
-public class ${table.serviceName}{
+public class ${table.serviceName} extends BaseService{
     @Autowired
     ${table.entityName}Dao dao;
     @Autowired

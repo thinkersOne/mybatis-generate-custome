@@ -4,12 +4,6 @@
     <list default="true" id="a455a2b1-1c25-409b-8f65-cb5b1d43ea0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/swagger/common.yaml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/swagger/common.yaml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/swagger/get-page.yaml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/src/main/resources/templates/swagger/get-page.yaml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/angular/edit.ts.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/angular/edit.ts.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/swagger/common.yaml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/swagger/common.yaml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/swagger/get-page.yaml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-generate/target/classes/templates/swagger/get-page.yaml.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600217936129</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="2">
+      <created>1600220655963</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1600220655963</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +353,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2" />
     <MESSAGE value="swagger自动生成" />
     <MESSAGE value="service 优化" />
     <MESSAGE value="设置swagger index.yaml" />
@@ -367,7 +367,8 @@
     <MESSAGE value="生成 其他models模板" />
     <MESSAGE value="id" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1600156314521">
@@ -386,10 +387,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599705947965" />
-    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600217934612">
+    <state x="401" y="12" key="CommitChangelistDialog2" timestamp="1600220654687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600217934612" />
+    <state x="401" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600220654687" />
     <state width="625" height="538" key="DebuggerActiveHint" timestamp="1600220533758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -450,10 +451,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599660495401" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600217944422">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600220665309">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600217944422" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600220665309" />
     <state x="415" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1599726051944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -466,10 +467,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="356" y="76" width="843" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599814787283" />
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600217939446">
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog" timestamp="1600220660007">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600217939446" />
+    <state x="414" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1600220660007" />
     <state x="262" y="166" key="new project wizard" timestamp="1599726783551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
